@@ -215,7 +215,7 @@ AddUserPage As screen:
         BorderColor: =ColorFade(ButtonPlannerSave.Fill, -15%)
         Color: =White
         DisplayMode: =
-        Fill: =PrimaryColor
+        Fill: =ColorValue(PrimaryColor)
         FocusedBorderColor: =ButtonPlannerSave.BorderColor
         Font: =Font.'Segoe UI'
         Height: =46

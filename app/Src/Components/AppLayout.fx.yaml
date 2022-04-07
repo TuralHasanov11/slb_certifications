@@ -1,4 +1,4 @@
-Navigation As CanvasComponent:
+AppLayout As CanvasComponent:
     Fill: =RGBA(241, 241, 241, 1)
     Height: =640
     Width: =1366
@@ -33,6 +33,36 @@ Navigation As CanvasComponent:
             TabIndex: =0
             Width: =16
             X: =24+0
-            Y: =15+0
+            Y: =76+0
             ZIndex: =2
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =100
+        Y: =100
+        ZIndex: =6
+
+        Rectangle2 As rectangle:
+            Height: =60
+            Width: =1366
+            ZIndex: =3
+
+        Label2 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =18
+            Text: ="PowerApps Training"
+            Width: =396
+            X: =40
+            Y: =10
+            ZIndex: =4
+
+        Image1 As image:
+            Height: =48
+            Image: ='schlumberger--600'
+            Width: =48
+            X: =1304
+            Y: =6
+            ZIndex: =5
 

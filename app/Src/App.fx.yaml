@@ -4,7 +4,7 @@ App As appinfo:
         =Concurrent(
             Set(StepsPanelCodeFontSize, 10),
             Set(currentPage, {page: "UsersPage"}),
-            Set(PrimaryColor, RGBA(101,128,187,100)),
+            Set(PrimaryColor, "#6580BB"),
             ClearCollect(NavigationMenu, {page: "UsersPage"}, {page: "CertificatesPage"}, {page:"AddCertificate"}, {page:"AddUser"},{page:"Default"});
         )
     StartScreen: =

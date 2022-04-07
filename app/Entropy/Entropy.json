@@ -1,11 +1,12 @@
 {
   "ComponentIndexes": {
-    "Navigation": 5
+    "AppLayout": 5
   },
   "ControlUniqueIds": {
     "AddCertificate": 9,
     "AddUserPage": 10,
     "App": 1,
+    "AppLayout": 3,
     "Button1": 96,
     "Button2": 127,
     "ButtonPlannerSave": 64,
@@ -24,13 +25,16 @@
     "galleryTemplate1": 72,
     "Group1": 13,
     "Group2": 95,
+    "Group3": 133,
     "Icon3": 93,
     "Icon4": 94,
     "iconHamburgerMenu": 5,
+    "Image1": 132,
     "Label1": 89,
+    "Label2": 131,
     "Label4": 92,
-    "Navigation": 3,
     "Rectangle1": 4,
+    "Rectangle2": 130,
     "Role_DataCard2": 107,
     "StarVisible7": 101,
     "StarVisible8": 106,
@@ -41,11 +45,17 @@
     "UsersPage": 8
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "04/07/2022 11:32:32",
+  "HeaderLastSavedDateTimeUTC": "04/07/2022 11:44:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "schlumberger--600": "fa3d7a86-5ecb-4251-94c0-f56341783b93.png",
+    "ZVhUIRwI_400x400": "7ad35b07-2be3-4ab0-854e-a3cf0b1a7146.jpg"
+  },
+  "LocalResourceRootPaths": {
+    "schlumberger--600": "https://docserverpwaprodneu.blob.core.windows.net/af1cee77-9210-436b-b43a-d609966fa5df-1/resource/177be443-2285-4e76-9bfa-bdc5edd42417.png?sv=2017-04-17&sr=b&sig=mW%2FwrqRWraF2qTiOh1RU3jcAyn684CkK5oB3fsijsms%3D&spr=https&se=2022-04-08T11%3A55%3A57Z&sp=r",
+    "ZVhUIRwI_400x400": "https://docserverpwaprodneu.blob.core.windows.net/af1cee77-9210-436b-b43a-d609966fa5df-1/resource/d76efc1f-ceb0-485a-8e80-775cae01de82.jpg?sv=2017-04-17&sr=b&sig=uxpoe4qTOw9OosndLtCw1i4cAG4eQxOPF3c5ruC%2Blfk%3D&spr=https&se=2022-04-08T11%3A55%3A24Z&sp=r"
+  },
   "OrderComponentMetadata": {
     "4409ebab4a344e198728583d618be77d": 0
   },
@@ -66,6 +76,11 @@
     "Group2": {
       "Icon3": 0,
       "Icon4": 1
+    },
+    "Group3": {
+      "Image1": 0,
+      "Label2": 1,
+      "Rectangle2": 2
     }
   },
   "OrderTemplate": {},
@@ -75,6 +90,7 @@
     "form": 4,
     "gallery": 1,
     "icon": 3,
+    "image": 8,
     "label": 2,
     "rectangle": 7,
     "text": 5
@@ -83,6 +99,7 @@
     "AddCertificate": 0,
     "AddUserPage": 0,
     "App": 0,
+    "AppLayout": 0,
     "Button1": 25,
     "Button2": 0,
     "ButtonPlannerSave": 24,
@@ -101,13 +118,16 @@
     "galleryTemplate1": 2,
     "Group1": 26,
     "Group2": 6,
+    "Group3": 0,
     "Icon3": 5,
     "Icon4": 7,
     "iconHamburgerMenu": 28,
+    "Image1": 0,
     "Label1": 3,
+    "Label2": 0,
     "Label4": 4,
-    "Navigation": 0,
     "Rectangle1": 27,
+    "Rectangle2": 0,
     "Role_DataCard2": 19,
     "StarVisible7": 10,
     "StarVisible8": 15,
@@ -118,14 +138,16 @@
     "UsersPage": 0
   },
   "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
+    "Image-SampleImage": 0,
+    "Image-schlumberger--600": 2,
+    "Image-ZVhUIRwI_400x400": 1
   },
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.1592463,
     "ControlCount": {
       "4409ebab4a344e198728583d618be77d": 2,
-      "button": 3,
+      "button": 4,
       "combobox": 2,
       "form": 1,
       "gallery": 1,
