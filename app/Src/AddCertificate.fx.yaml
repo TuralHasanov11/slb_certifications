@@ -1,0 +1,4 @@
+AddCertificate As screen:
+    OnVisible: |-
+        =Set(currentPage, {page: "AddCertificate"})
+

@@ -1,0 +1,4 @@
+DefaultPage As screen:
+    OnVisible: |-
+        =Set(currentPage, {page: "Default"})
+

@@ -1,0 +1,135 @@
+{
+  "ComponentIndexes": {
+    "Navigation": 5
+  },
+  "ControlUniqueIds": {
+    "AddCertificate": 9,
+    "AddUserPage": 10,
+    "App": 1,
+    "ButtonPlannerSave": 47,
+    "CertificatesPage": 11,
+    "DataCardKey1": 17,
+    "DataCardKey2": 22,
+    "DataCardKey3": 27,
+    "DataCardKey4": 32,
+    "DataCardKey5": 37,
+    "DataCardValue1": 18,
+    "DataCardValue2": 23,
+    "DataCardValue3": 28,
+    "DataCardValue4": 33,
+    "DataCardValue5": 38,
+    "DefaultPage": 12,
+    "Department": 21,
+    "Department: ID_DataCard1": 31,
+    "Email": 16,
+    "ErrorMessage1": 19,
+    "ErrorMessage2": 24,
+    "ErrorMessage3": 29,
+    "ErrorMessage4": 34,
+    "ErrorMessage5": 39,
+    "Group1": 13,
+    "iconHamburgerMenu": 5,
+    "Navigation": 3,
+    "Rectangle1": 4,
+    "Role": 26,
+    "Role: ID_DataCard1": 36,
+    "StarVisible1": 20,
+    "StarVisible2": 25,
+    "StarVisible3": 30,
+    "StarVisible4": 35,
+    "StarVisible5": 40,
+    "UserForm": 15,
+    "UsersPage": 8
+  },
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "04/07/2022 10:20:41",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {
+    "4409ebab4a344e198728583d618be77d": 0
+  },
+  "OrderComponentTemplate": {
+    "4409ebab4a344e198728583d618be77d": 0
+  },
+  "OrderDataSource": {
+    "ComboBoxSample": 2,
+    "CustomGallerySample": 0,
+    "NavigationMenu": 3,
+    "Users": 1
+  },
+  "OrderGroupControls": {
+    "Group1": {
+      "iconHamburgerMenu": 1,
+      "Rectangle1": 0
+    }
+  },
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 4,
+    "combobox": 3,
+    "form": 0,
+    "icon": 6,
+    "label": 1,
+    "rectangle": 5,
+    "text": 2
+  },
+  "PublishOrderIndices": {
+    "AddCertificate": 0,
+    "AddUserPage": 0,
+    "App": 0,
+    "ButtonPlannerSave": 113,
+    "CertificatesPage": 0,
+    "DataCardKey1": 3,
+    "DataCardKey2": 8,
+    "DataCardKey3": 13,
+    "DataCardKey4": 18,
+    "DataCardKey5": 23,
+    "DataCardValue1": 4,
+    "DataCardValue2": 9,
+    "DataCardValue3": 14,
+    "DataCardValue4": 19,
+    "DataCardValue5": 24,
+    "DefaultPage": 0,
+    "Department": 6,
+    "Department: ID_DataCard1": 16,
+    "Email": 1,
+    "ErrorMessage1": 5,
+    "ErrorMessage2": 10,
+    "ErrorMessage3": 15,
+    "ErrorMessage4": 20,
+    "ErrorMessage5": 25,
+    "Group1": 26,
+    "iconHamburgerMenu": 28,
+    "Navigation": 0,
+    "Rectangle1": 27,
+    "Role": 11,
+    "Role: ID_DataCard1": 21,
+    "StarVisible1": 2,
+    "StarVisible2": 7,
+    "StarVisible3": 12,
+    "StarVisible4": 17,
+    "StarVisible5": 22,
+    "UserForm": 0,
+    "UsersPage": 0
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1592463,
+    "ControlCount": {
+      "4409ebab4a344e198728583d618be77d": 2,
+      "button": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "icon": 1,
+      "rectangle": 1,
+      "screen": 5
+    },
+    "DeserializationLoadTime": 1.006854,
+    "ErrorCount": 17
+  }
+}

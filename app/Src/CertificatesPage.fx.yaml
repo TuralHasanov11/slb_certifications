@@ -1,0 +1,5 @@
+CertificatesPage As screen:
+    Fill: =
+    OnVisible: |-
+        =Set(currentPage, {page: "CertificatesPage"})
+
