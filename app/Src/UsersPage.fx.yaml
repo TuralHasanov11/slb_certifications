@@ -66,19 +66,6 @@ UsersPage As screen:
             Y: =15
             ZIndex: =12
 
-    Back_3 As icon.DocumentwithContent:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 51, 102, 1)
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Back()
-        PaddingBottom: =5
-        PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
-        X: =1232
-        Y: =86
-        ZIndex: =4
-
     Rectangle4 As rectangle:
         Height: =40
         Width: =1023

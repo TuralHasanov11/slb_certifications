@@ -231,7 +231,7 @@ CertificateDetailPage As screen:
             DataCardKey17 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Issue Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -269,7 +269,7 @@ CertificateDetailPage As screen:
             DataCardKey19 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Interested People"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -325,7 +325,7 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =400
+            Width: =800
             X: =0
             Y: =3
             ZIndex: =2
@@ -340,18 +340,13 @@ CertificateDetailPage As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue18 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
+            HtmlText1 As htmlViewer:
+                Height: =30
+                HtmlText: =Parent.Default
+                Width: =770
                 X: =30
-                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
-                ZIndex: =2
+                Y: =44
+                ZIndex: =3
 
     CertificateEdit_1 As icon.Edit:
         Color: =RGBA(255, 255, 255, 1)
@@ -381,19 +376,4 @@ CertificateDetailPage As screen:
         X: =1206
         Y: =140
         ZIndex: =4
-
-    Back_1 As icon.DocumentwithContent:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 51, 102, 1)
-        Height: =56
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Back()
-        PaddingBottom: =5
-        PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
-        Width: =56
-        X: =1042
-        Y: =140
-        ZIndex: =5
 

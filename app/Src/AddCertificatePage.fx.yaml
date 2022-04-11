@@ -491,17 +491,3 @@ AddCertificatePage As screen:
         Y: =661
         ZIndex: =3
 
-    CertficateDetail_2 As icon.DocumentwithContent:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 51, 102, 1)
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Back()
-        PaddingBottom: =5
-        PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
-        Tooltip: ="Back"
-        X: =1240
-        Y: =143
-        ZIndex: =4
-

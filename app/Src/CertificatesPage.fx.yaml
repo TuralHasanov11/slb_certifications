@@ -96,22 +96,30 @@ CertificatesPage As screen:
             Y: =15
             ZIndex: =11
 
-    Back_2 As icon.DocumentwithContent:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 51, 102, 1)
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Back()
-        PaddingBottom: =5
-        PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
-        X: =1232
-        Y: =108
-        ZIndex: =3
-
     CertificateFilter As text:
         Default: =""
+        HintText: ="Search"
         X: =273
         Y: =197
         ZIndex: =4
+
+    Button2_1 As button:
+        BorderThickness: =0
+        Fill: =RGBA(92, 184, 92, 1)
+        Height: =46
+        OnSelect: =NewForm(CertificateForm);Navigate(AddCertificatePage, ScreenTransition.Fade)
+        Text: ="Add Certificate"
+        Width: =225
+        X: =1071
+        Y: =172
+        ZIndex: =5
+
+    Icon1_1 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Icon: =Icon.Add
+        Width: =25
+        X: =1082
+        Y: =183
+        ZIndex: =6
 
