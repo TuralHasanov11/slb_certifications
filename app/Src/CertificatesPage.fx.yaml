@@ -8,7 +8,7 @@ CertificatesPage As screen:
     CertificateList As gallery.galleryVertical:
         BorderThickness: =0.05
         Height: =483
-        Items: =Filter(Certificates,1=Department.Id)
+        Items: =SortByColumns(Filter([@Certificates], StartsWith(Title, CertificateFilter.Text)), "Title", If(SortDescending1, Descending, Ascending))
         Layout: =Layout.Vertical
         TemplateSize: =78
         Width: =1023
@@ -189,4 +189,22 @@ CertificatesPage As screen:
         X: =1095
         Y: =228
         ZIndex: =13
+
+    Dropdown1 As dropdown:
+        Items: |-
+            =Table({value:"Title"},{value:"IssueDate"}, {value:"Subject"}, {value:"ExpirationDate"})
+        Width: =305
+        X: =607
+        Y: =172
+        ZIndex: =14
+
+    Icon2 As icon.ArrowsUpDown:
+        Height: =36
+        Icon: =Icon.Sort
+        OnSelect: |-
+            =UpdateContext({SortDescending1: !SortDescending1})
+        Width: =52
+        X: =912
+        Y: =172
+        ZIndex: =15
 
