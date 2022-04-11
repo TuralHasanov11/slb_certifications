@@ -1,8 +1,7 @@
 UsersPage As screen:
     OnVisible: |-
         =Set(AuthUserEmail, User().Email);
-        Set(AuthUser, Filter(Users,User().Email=User.Email));
-        Set(AuthProfile,{ID:AuthUser.ID, Department:AuthUser.Group,Email:AuthUserEmail,Fullname:User().FullName});
+        Set(AuthUser, First(Filter(Users,User().Email=User.Email)))
 
     AppLayout_1 As AppLayout:
 
@@ -11,20 +10,14 @@ UsersPage As screen:
         OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
         Text: ="Add Employee"
         Width: =212
-        X: =264
-        Y: =147
+        X: =273
+        Y: =196
         ZIndex: =3
 
-    Label14 As label:
-        Text: =AuthProfile.Fullname
-        X: =732
-        Y: =135
-        ZIndex: =4
-
-    CertificateList_1 As gallery.galleryVertical:
+    UserList As gallery.galleryVertical:
         BorderThickness: =0.05
         Height: =483
-        Items: =Users
+        Items: =Filter(Users,User().Email=User.Email)
         Layout: =Layout.Vertical
         TemplateSize: =78
         Width: =1023
@@ -72,7 +65,7 @@ UsersPage As screen:
             Fill: =RGBA(255, 191, 0, 1)
             Height: =40
             Icon: =Icon.Edit
-            OnSelect: =EditForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+            OnSelect: =EditForm(UserForm); Navigate(AddUserPage, ScreenTransition.Fade)
             PaddingLeft: =5
             PaddingRight: =5
             PaddingTop: =5
@@ -86,7 +79,7 @@ UsersPage As screen:
             Fill: =RGBA(230, 41, 41, 1)
             Height: =40
             Icon: =Icon.Trash
-            OnSelect: =Remove([@Certificates], CertificateList_1.Selected); If (IsEmpty(Errors([@Certificates], CertificateList_1.Selected)), Back())
+            OnSelect: =Remove([@Users], UserList.Selected); If (IsEmpty(Errors([@Users], UserList.Selected)), Back())
             PaddingBottom: =5
             PaddingLeft: =5
             PaddingRight: =5
@@ -96,19 +89,16 @@ UsersPage As screen:
             Y: =15
             ZIndex: =10
 
-        CertficateDetail_1 As icon.DocumentwithContent:
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 51, 102, 1)
-            Height: =40
-            Icon: =Icon.DocumentWithContent
-            OnSelect: |-
-                =Navigate(CertificateDetailPage, ScreenTransition.Fade, {certificateItem:ThisItem})
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =40
-            X: =828
-            Y: =15
-            ZIndex: =11
+    Back_3 As icon.DocumentwithContent:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 51, 102, 1)
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Back()
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        X: =1232
+        Y: =108
+        ZIndex: =6
 
