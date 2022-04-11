@@ -820,7 +820,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1404,7 +1404,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle4",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1842,7 +1842,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "THEmail",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2118,7 +2118,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "THFullName",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2394,7 +2394,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "THGroups",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2670,7 +2670,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "THOperations",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3430,7 +3430,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "UserFilter",
-      "ParentIndex": 11,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3976,7 +3976,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "UserList",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

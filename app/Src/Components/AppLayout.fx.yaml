@@ -3,7 +3,7 @@ AppLayout As CanvasComponent:
     Fill: =RGBA(241, 241, 241, 1)
     Height: =App.Height
     NavigationMenu: |-
-        =Table({Item:"CertificatesPage"})
+        =Table({Item:"CertificatesPage"}, {Item:"UsersPage"})
     PrimaryColor: ="Text"
     SelectedPage: =Gallery1.Selected.Item
     Width: =1366

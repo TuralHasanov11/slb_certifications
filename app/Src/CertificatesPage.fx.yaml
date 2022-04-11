@@ -168,8 +168,8 @@ CertificatesPage As screen:
             OnSelect: =NewForm(CertificateForm);Navigate(AddCertificatePage, ScreenTransition.Fade)
             Text: ="Add Certificate"
             Width: =225
-            X: =1095
-            Y: =81
+            X: =1058
+            Y: =169
             ZIndex: =5
 
         Icon1_1 As icon.Add:
@@ -177,8 +177,8 @@ CertificatesPage As screen:
             Height: =24
             Icon: =Icon.Add
             Width: =24
-            X: =1109
-            Y: =92
+            X: =1072
+            Y: =180
             ZIndex: =6
 
     THOperations_3 As label:

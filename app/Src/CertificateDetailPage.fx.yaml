@@ -6,6 +6,7 @@ CertificateDetailPage As screen:
         DataSource: =Certificates
         Item: =CertificateList.Selected
         NumberOfColumns: =2
+        Width: =1049
         X: =256
         Y: =218
         ZIndex: =2
@@ -19,7 +20,7 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
-            Width: =400
+            Width: =524
             X: =0
             Y: =0
             ZIndex: =2
@@ -57,7 +58,7 @@ CertificateDetailPage As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue20.Selected
-            Width: =400
+            Width: =524
             X: =1
             Y: =0
             ZIndex: =2
@@ -121,7 +122,7 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =400
+            Width: =524
             X: =0
             Y: =1
             ZIndex: =2
@@ -159,7 +160,7 @@ CertificateDetailPage As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue15.Selected
-            Width: =400
+            Width: =524
             X: =1
             Y: =1
             ZIndex: =2
@@ -223,7 +224,7 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
-            Width: =400
+            Width: =524
             X: =0
             Y: =2
             ZIndex: =2
@@ -261,7 +262,7 @@ CertificateDetailPage As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue19.SelectedItems
-            Width: =400
+            Width: =524
             X: =1
             Y: =2
             ZIndex: =2
@@ -325,7 +326,7 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =800
+            Width: =524
             X: =0
             Y: =3
             ZIndex: =2
