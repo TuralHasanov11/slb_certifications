@@ -1124,19 +1124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertficateDetail_1.AccessibleLabel"
+                  "fullyQualifiedName": "CertificateDetailPage.Back_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertficateDetail_1.AccessibleLabel",
+                  "fullyQualifiedName": "CertificateDetailPage.Back_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertficateDetail_1"
+                "type": "CertificateDetailPage.Back_1"
               }
             }
           ],
@@ -1154,19 +1154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertficateDetail_1.TabIndex"
+                  "fullyQualifiedName": "CertificateDetailPage.Back_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertficateDetail_1.TabIndex",
+                  "fullyQualifiedName": "CertificateDetailPage.Back_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertficateDetail_1"
+                "type": "CertificateDetailPage.Back_1"
               }
             }
           ],
@@ -1227,6 +1227,66 @@
                 "member": "TabIndex",
                 "module": "AddCertificatePage",
                 "type": "AddCertificatePage.CertficateDetail_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificatesPage.Back_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificatesPage.Back_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CertificatesPage",
+                "type": "CertificatesPage.Back_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificatesPage.Back_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificatesPage.Back_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CertificatesPage",
+                "type": "CertificatesPage.Back_2"
               }
             }
           ],

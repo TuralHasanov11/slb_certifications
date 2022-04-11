@@ -378,7 +378,7 @@ CertificateDetailPage As screen:
         Y: =140
         ZIndex: =4
 
-    CertficateDetail_1 As icon.DocumentwithContent:
+    Back_1 As icon.DocumentwithContent:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 51, 102, 1)
         Icon: =Icon.ChevronLeft
