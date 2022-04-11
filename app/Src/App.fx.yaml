@@ -3,6 +3,7 @@ App As appinfo:
     OnStart: |
         =Concurrent(
             Set(CurrentUserEmail, User().Email),
+            Set(CurrentUser, Filter(Users,User().Email=User.Email)),
             Set(currentPage, {page: "UsersPage"}),
             Set(PrimaryColor, "#003366")
         )

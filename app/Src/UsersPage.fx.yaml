@@ -1,62 +1,10 @@
 UsersPage As screen:
     OnVisible: |-
-        =Set(currentPage, {page: "UsersPage"})
+        =Set(AuthUserEmail, User().Email);
+        Set(AuthUser, Filter(Users,User().Email=User.Email));
+        Set(AuthProfile,{ID:AuthUser.ID, Department:AuthUser.Group,Email:AuthUserEmail,Fullname:User().FullName});
 
     AppLayout_1 As AppLayout:
-
-    UserList As gallery.galleryVertical:
-        Height: =523
-        Items: =Users
-        Layout: =Layout.Vertical
-        ShowNavigation: =true
-        TemplateSize: =80
-        Width: =980
-        X: =252
-        Y: =225
-        ZIndex: =2
-
-        Label1 As label:
-            OnSelect: =Select(Parent)
-            Size: =18
-            Text: =ThisItem.Title
-            Width: =274
-            X: =12
-            Y: =60
-            ZIndex: =1
-
-        Label4 As label:
-            OnSelect: =Select(Parent)
-            Size: =18
-            Text: =ThisItem.Group.Value
-            X: =338
-            Y: =60
-            ZIndex: =2
-
-        Group2 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =5
-
-            Icon3 As icon.Edit:
-                Height: =24
-                Icon: =Icon.Edit
-                OnSelect: |-
-                    =EditForm(UserForm); Navigate(AddUserPage, ScreenTransition.Fade, {userItem:ThisItem})
-                Width: =24
-                X: =732
-                Y: =68
-                ZIndex: =3
-
-            Icon4 As icon.Trash:
-                Height: =24
-                Icon: =Icon.Trash
-                OnSelect: =Remove([@Users], UserList.Selected); If (IsEmpty(Errors([@Users], UserList.Selected)), Back())
-                Width: =24
-                X: =785
-                Y: =68
-                ZIndex: =4
 
     Button2 As button:
         Height: =46
@@ -66,4 +14,101 @@ UsersPage As screen:
         X: =264
         Y: =147
         ZIndex: =3
+
+    Label14 As label:
+        Text: =AuthProfile.Fullname
+        X: =732
+        Y: =135
+        ZIndex: =4
+
+    CertificateList_1 As gallery.galleryVertical:
+        BorderThickness: =0.05
+        Height: =483
+        Items: =Users
+        Layout: =Layout.Vertical
+        TemplateSize: =78
+        Width: =1023
+        X: =273
+        Y: =263
+        ZIndex: =5
+
+        CertificateTitle_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Title
+            Y: =15
+            ZIndex: =1
+
+        CertificateExpirationDate_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.User.DisplayName
+            X: =321
+            Y: =15
+            ZIndex: =2
+
+        CertificateDepartment_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Action.Value
+            Width: =131
+            X: =488
+            Y: =15
+            ZIndex: =3
+
+        CertificateIssueDate_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Group.Value
+            X: =642
+            Y: =15
+            ZIndex: =5
+
+        CertificateSubject_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ID
+            X: =160
+            Y: =15
+            ZIndex: =8
+
+        CertificateEdit_2 As icon.Edit:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 191, 0, 1)
+            Height: =40
+            Icon: =Icon.Edit
+            OnSelect: =EditForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =40
+            X: =892
+            Y: =15
+            ZIndex: =9
+
+        CertificateDelete_2 As icon.Trash:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(230, 41, 41, 1)
+            Height: =40
+            Icon: =Icon.Trash
+            OnSelect: =Remove([@Certificates], CertificateList_1.Selected); If (IsEmpty(Errors([@Certificates], CertificateList_1.Selected)), Back())
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =40
+            X: =956
+            Y: =15
+            ZIndex: =10
+
+        CertficateDetail_1 As icon.DocumentwithContent:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 51, 102, 1)
+            Height: =40
+            Icon: =Icon.DocumentWithContent
+            OnSelect: |-
+                =Navigate(CertificateDetailPage, ScreenTransition.Fade, {certificateItem:ThisItem})
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =40
+            X: =828
+            Y: =15
+            ZIndex: =11
 

@@ -40,8 +40,8 @@
       }
     },
     "dataSources": [
-      "Users",
-      "Certificates"
+      "Certificates",
+      "Users"
     ],
     "dependencies": {},
     "dependents": [],
