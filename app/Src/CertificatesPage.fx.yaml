@@ -48,23 +48,40 @@ CertificatesPage As screen:
             ZIndex: =8
 
         CertificateEdit As icon.Edit:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(255, 191, 0, 1)
             Icon: =Icon.Edit
             OnSelect: |-
                 =EditForm(CertificateForm); Navigate(AddCertificate, ScreenTransition.Fade, {userItem:ThisItem})
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
             X: =724
             Y: =28
             ZIndex: =9
 
         CertificateDelete As icon.Trash:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(230, 41, 41, 1)
             Icon: =Icon.Trash
             OnSelect: =Remove([@Certificates], CertificateList.Selected); If (IsEmpty(Errors([@Certificates], CertificateList.Selected)), Back())
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
             X: =788
             Y: =28
             ZIndex: =10
 
         CertficateDetail As icon.DocumentwithContent:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 51, 102, 1)
             Icon: =Icon.DocumentWithContent
             OnSelect: =Select(Parent)
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
             X: =660
             Y: =28
             ZIndex: =11

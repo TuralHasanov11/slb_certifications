@@ -44,6 +44,7 @@ AppLayout As CanvasComponent:
         ZIndex: =6
 
         Rectangle2 As rectangle:
+            Fill: =RGBA(0, 51, 102, 1)
             Height: =60
             Width: =1366
             ZIndex: =3
