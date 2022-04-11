@@ -52,7 +52,10 @@ AppLayout As CanvasComponent:
             AccessibleLabel: =
             Items: =AppLayout.NavigationMenu
             Layout: =Layout.Vertical
-            OnSelect: =
+            OnSelect: |-
+                =If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, None));
+                If(ThisItem.Item = "CertificateDetailPage", Navigate(CertificateDetailPage, None));
+                If(ThisItem.Item = "AddCertificatePage", Navigate(AddCertificatePage, None));
             TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
             Width: =200+0
             Y: =109+0
@@ -75,7 +78,7 @@ AppLayout As CanvasComponent:
             Rectangle3 As rectangle:
                 Height: =20
                 OnSelect: =Select(Parent)
-                Visible: =ThisItem.Item = selected.Item
+                Visible: =ThisItem.Item = AppLayout.SelectedPage
                 Width: =4
                 X: =11
                 Y: =11
@@ -98,7 +101,6 @@ AppLayout As CanvasComponent:
             Height: =16
             HoverBorderColor: =ColorFade(iconHamburgerMenu.BorderColor, 20%)
             Icon: =Icon.Hamburger
-            OnSelect: =Set(IsExpand, !IsExpand)
             PressedBorderColor: =ColorFade(iconHamburgerMenu.BorderColor, -20%)
             TabIndex: =0
             Width: =16
