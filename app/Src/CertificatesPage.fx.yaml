@@ -6,8 +6,9 @@ CertificatesPage As screen:
     AppLayout_2 As AppLayout:
 
     CertificateList As gallery.galleryVertical:
+        BorderThickness: =0.05
         Height: =483
-        Items: =Certificates
+        Items: =Filter(Certificates,1=Department.Id)
         Layout: =Layout.Vertical
         TemplateSize: =78
         Width: =1023
@@ -107,4 +108,10 @@ CertificatesPage As screen:
         X: =1232
         Y: =108
         ZIndex: =3
+
+    CertificateFilter As text:
+        Default: =""
+        X: =273
+        Y: =197
+        ZIndex: =4
 

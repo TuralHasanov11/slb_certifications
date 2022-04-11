@@ -2,10 +2,9 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |
         =Concurrent(
-            Set(StepsPanelCodeFontSize, 10),
+            Set(CurrentUserEmail, User().Email),
             Set(currentPage, {page: "UsersPage"}),
-            Set(PrimaryColor, "#003366"),
-            ClearCollect(NavigationMenu, {page: "UsersPage"}, {page: "CertificatesPage"}, {page:"AddCertificate"}, {page:"AddUser"},{page:"Default"});
+            Set(PrimaryColor, "#003366")
         )
     StartScreen: =
 

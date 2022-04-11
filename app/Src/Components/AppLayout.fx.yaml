@@ -11,37 +11,6 @@ AppLayout As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    Group3 As group:
-        Height: =5
-        Width: =5
-        X: =100
-        Y: =100
-        ZIndex: =6
-
-        Rectangle2 As rectangle:
-            Fill: =RGBA(0, 51, 102, 1)
-            Height: =60
-            Width: =1366
-            ZIndex: =3
-
-        Label2 As label:
-            AutoHeight: =true
-            Color: =RGBA(255, 255, 255, 1)
-            Size: =18
-            Text: ="PowerApps Training"
-            Width: =396
-            X: =40
-            Y: =10
-            ZIndex: =4
-
-        Image1 As image:
-            Height: =48
-            Image: ='schlumberger--600'
-            Width: =48
-            X: =1304
-            Y: =6
-            ZIndex: =5
-
     Group1 As group:
         Height: =5
         Width: =5
@@ -51,15 +20,15 @@ AppLayout As CanvasComponent:
 
         Gallery1 As gallery.galleryVertical:
             AccessibleLabel: =
-            Height: =659
+            Height: =668
             Items: =AppLayout.NavigationMenu
             Layout: =Layout.Vertical
             OnSelect: =If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, None));
             ShowScrollbar: =false
             TemplateFill: =If(ThisItem.Item = AppLayout.SelectedPage, RGBA(220, 220, 220, 1), RGBA(0,0,0,0))
             TemplateSize: =50
-            Width: =200+0
-            Y: =109+0
+            Width: =200
+            Y: =120
             ZIndex: =1
 
             Label5 As label:
@@ -83,11 +52,10 @@ AppLayout As CanvasComponent:
         Rectangle1 As rectangle:
             BorderColor: =RGBA(101, 128, 187, 1)
             Fill: =RGBA(166, 166, 166, 1)
-            Height: =Parent.Height-60
+            Height: =718
             Width: =1
             X: =200
-            Y: |
-                =60+0
+            Y: =65
             ZIndex: =1
 
         iconHamburgerMenu As icon.Hamburger:
@@ -101,6 +69,68 @@ AppLayout As CanvasComponent:
             TabIndex: =0
             Width: =16
             X: =24
-            Y: =76+0
+            Y: =85
             ZIndex: =2
+
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =9
+
+        Rectangle2 As rectangle:
+            Fill: =RGBA(0, 51, 102, 1)
+            Height: =65
+            Width: =1366
+            ZIndex: =3
+
+        Label2 As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =18
+            Text: ="PowerApps Training"
+            Width: =396
+            X: =40
+            Y: =10
+            ZIndex: =4
+
+        Image1 As image:
+            Height: =48
+            Image: ='schlumberger--600'
+            Width: =48
+            X: =1304
+            Y: =6
+            ZIndex: =5
+
+        UserFullname As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Size: =18
+            Text: =User().FullName
+            Width: =246
+            X: =1003
+            ZIndex: =6
+
+        UserEmail As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =31
+            Size: =16
+            Text: =User().Email
+            Width: =272
+            X: =1003
+            Y: =30
+            ZIndex: =7
+
+        Image3 As image:
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =941
+            Y: =5
+            ZIndex: =8
 
