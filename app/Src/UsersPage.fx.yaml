@@ -5,15 +5,6 @@ UsersPage As screen:
 
     AppLayout_1 As AppLayout:
 
-    Button2 As button:
-        Height: =46
-        OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
-        Text: ="Add Employee"
-        Width: =212
-        X: =273
-        Y: =196
-        ZIndex: =3
-
     UserList As gallery.galleryVertical:
         BorderThickness: =0.05
         Height: =483
@@ -101,4 +92,29 @@ UsersPage As screen:
         X: =1232
         Y: =108
         ZIndex: =6
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Button2 As button:
+            Height: =46
+            OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
+            Text: ="Add Employee"
+            Width: =225
+            X: =273
+            Y: =196
+            ZIndex: =3
+
+        Icon1 As icon.Add:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =24
+            Icon: =Icon.Add
+            Width: =25
+            X: =284
+            Y: =207
+            ZIndex: =7
 
