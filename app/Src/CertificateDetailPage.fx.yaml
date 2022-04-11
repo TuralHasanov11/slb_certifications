@@ -1,12 +1,14 @@
 CertificateDetailPage As screen:
 
+    AppLayout_5 As AppLayout:
+
     CertificateDetailForm As formViewer:
         DataSource: =Certificates
         Item: =certificateItem
         NumberOfColumns: =2
         X: =310
         Y: =132
-        ZIndex: =1
+        ZIndex: =2
 
         Title_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid

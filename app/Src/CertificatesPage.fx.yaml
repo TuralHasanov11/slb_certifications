@@ -3,6 +3,8 @@ CertificatesPage As screen:
     OnVisible: |-
         =Set(currentPage, {page: "CertificatesPage"})
 
+    AppLayout_2 As AppLayout:
+
     CertificateList As gallery.galleryVertical:
         Height: =565
         Items: =Certificates
@@ -11,7 +13,7 @@ CertificatesPage As screen:
         Width: =913
         X: =264
         Y: =102
-        ZIndex: =1
+        ZIndex: =2
 
         CertificateTitle As label:
             OnSelect: =Select(Parent)

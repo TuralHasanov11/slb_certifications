@@ -2,12 +2,14 @@ AddCertificatePage As screen:
     OnVisible: |-
         =Set(currentPage, {page: "AddCertificate"})
 
+    AppLayout_4 As AppLayout:
+
     CertificateForm As form:
         DataSource: =Certificates
         Item: =certificateItem
         X: =291
         Y: =96
-        ZIndex: =1
+        ZIndex: =2
 
         Title_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -472,4 +474,30 @@ AddCertificatePage As screen:
                 Wrap: =false
                 Y: =DataCardKey9.Y
                 ZIndex: =4
+
+    ButtonPlannerSave_1 As button:
+        BorderColor: =ColorFade(ButtonPlannerSave_1.Fill, -15%)
+        Color: =White
+        DisplayMode: =
+        Fill: =ColorValue(PrimaryColor)
+        FocusedBorderColor: =ButtonPlannerSave_1.BorderColor
+        Font: =Font.'Segoe UI'
+        Height: =46
+        HoverBorderColor: =ColorFade(ButtonPlannerSave_1.BorderColor, 20%)
+        HoverColor: =ButtonPlannerSave_1.Color
+        HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
+        OnSelect: =SubmitForm(CertificateForm)
+        PressedBorderColor: =ButtonPlannerSave_1.Fill
+        PressedColor: =ButtonPlannerSave_1.Fill
+        PressedFill: =ButtonPlannerSave_1.Color
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Size: =16
+        Text: ="Save"
+        Width: =133
+        X: =638
+        Y: =465
+        ZIndex: =3
 

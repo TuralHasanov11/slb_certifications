@@ -2,6 +2,8 @@ UsersPage As screen:
     OnVisible: |-
         =Set(currentPage, {page: "UsersPage"})
 
+    AppLayout_1 As AppLayout:
+
     UserList As gallery.galleryVertical:
         Height: =523
         Items: =Users
@@ -9,9 +11,9 @@ UsersPage As screen:
         ShowNavigation: =true
         TemplateSize: =80
         Width: =980
-        X: =246
-        Y: =165
-        ZIndex: =1
+        X: =252
+        Y: =225
+        ZIndex: =2
 
         Label1 As label:
             OnSelect: =Select(Parent)
@@ -61,10 +63,7 @@ UsersPage As screen:
         OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
         Text: ="Add Employee"
         Width: =212
-        X: =267
-        Y: =93
-        ZIndex: =2
-
-    AppLayout_1 As AppLayout:
+        X: =264
+        Y: =147
         ZIndex: =3
 
