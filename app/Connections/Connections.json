@@ -1,5 +1,5 @@
 {
-  "89851e38-7ed8-4eca-8edb-5d92dca04205": {
+  "76f32400-09ce-4243-84e5-a4d74ab8df93": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/5a7232977c2246ef9bf180c49396d054",
     "connectionParameters": {
       "sku": "Enterprise"
@@ -10,10 +10,10 @@
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {
-      "https://slb001.sharepoint.com/sites/Documents": {
+      "https://slb001.sharepoint.com/sites/Documents2": {
         "dataSources": {
           "Users": {
-            "tableName": "d35365d3-0dfe-4015-96e3-3ad80c861a13"
+            "tableName": "f277c2d2-3ceb-4f83-8c68-9af40692682d"
           }
         }
       }
@@ -23,6 +23,6 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "89851e38-7ed8-4eca-8edb-5d92dca04205"
+    "id": "76f32400-09ce-4243-84e5-a4d74ab8df93"
   }
 }

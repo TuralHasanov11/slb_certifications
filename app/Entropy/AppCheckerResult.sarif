@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Department_DataCard2.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "AddUserPage.UserForm.User_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Department_DataCard2.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "AddUserPage.UserForm.User_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddUserPage",
-                "type": "AddUserPage.UserForm.Department_DataCard2.DataCardValue8"
+                "type": "AddUserPage.UserForm.User_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Role_DataCard2.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "AddUserPage.UserForm.Group_DataCard1.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Role_DataCard2.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "AddUserPage.UserForm.Group_DataCard1.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddUserPage",
-                "type": "AddUserPage.UserForm.Role_DataCard2.DataCardValue9"
+                "type": "AddUserPage.UserForm.Group_DataCard1.DataCardValue3"
               }
             }
           ],
@@ -164,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Title_DataCard2.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "AddUserPage.UserForm.Title_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Title_DataCard2.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "AddUserPage.UserForm.Title_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddUserPage",
-                "type": "AddUserPage.UserForm.Title_DataCard2.DataCardValue7"
+                "type": "AddUserPage.UserForm.Title_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -374,17 +374,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.currentPage"
+                  "fullyQualifiedName": "App.StepsPanelCodeFontSize"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.currentPage",
+                  "fullyQualifiedName": "App.StepsPanelCodeFontSize",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "currentPage",
+                "member": "StepsPanelCodeFontSize",
                 "module": "App",
                 "type": "App"
               }
@@ -404,17 +404,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.StepsPanelCodeFontSize"
+                  "fullyQualifiedName": "App.currentPage"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.StepsPanelCodeFontSize",
+                  "fullyQualifiedName": "App.currentPage",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "StepsPanelCodeFontSize",
+                "member": "currentPage",
                 "module": "App",
                 "type": "App"
               }
@@ -534,7 +534,7 @@
               }
             }
           ],
-          "version": "1.321"
+          "version": "1.323"
         }
       }
     }

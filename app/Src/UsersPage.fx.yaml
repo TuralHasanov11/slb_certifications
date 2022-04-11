@@ -25,7 +25,7 @@ UsersPage As screen:
         Label4 As label:
             OnSelect: =Select(Parent)
             Size: =18
-            Text: =ThisItem.Department.Value
+            Text: =ThisItem.Group.Value
             X: =338
             Y: =60
             ZIndex: =2

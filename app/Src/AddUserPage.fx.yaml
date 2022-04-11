@@ -3,6 +3,7 @@ AddUserPage As screen:
         =Set(currentPage, {page: "AddUser"})
 
     UserForm As form:
+        AcceptsFocus: =false
         DataSource: =Users
         Height: =182
         Item: =userItem
@@ -11,7 +12,7 @@ AddUserPage As screen:
         Y: =114
         ZIndex: =1
 
-        Title_DataCard2 As typedDataCard.textualEditCard:
+        Title_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -21,13 +22,13 @@ AddUserPage As screen:
             Height: =50
             MaxLength: =DataSourceInfo([@Users], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue7.Text
+            Update: =DataCardValue1.Text
             Width: =266
             X: =0
             Y: =0
-            ZIndex: =2
+            ZIndex: =1
 
-            DataCardKey7 As label:
+            DataCardKey1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -37,7 +38,7 @@ AddUserPage As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue7 As text:
+            DataCardValue1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -51,10 +52,10 @@ AddUserPage As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage7 As label:
+            ErrorMessage1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -66,35 +67,35 @@ AddUserPage As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue7.Y + DataCardValue7.Height
+                Y: =DataCardValue1.Y + DataCardValue1.Height
                 ZIndex: =3
 
-            StarVisible7 As label:
+            StarVisible1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey7.Height
+                Height: =DataCardKey1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey7.Y
+                Y: =DataCardKey1.Y
                 ZIndex: =4
 
-        Department_DataCard2 As typedDataCard.comboBoxEditCard:
+        User_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Department"
-            Default: =ThisItem.Department
+            DataField: ="Users"
+            Default: =ThisItem.User
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Users],DataSourceInfo.DisplayName,"Department")
+            DisplayName: =DataSourceInfo([@Users],DataSourceInfo.DisplayName,"Users")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
-            Update: =DataCardValue8.Selected
+            Update: =DataCardValue2.Selected
             Width: =266
             X: =1
             Y: =0
-            ZIndex: =2
+            ZIndex: =1
 
-            DataCardKey8 As label:
+            DataCardKey2 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -104,23 +105,24 @@ AddUserPage As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue8 As combobox:
+            DataCardValue2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
+                DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Users].Department)
+                Items: =Choices([@Users].Users)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(Users.Department,DataCardValue8.SearchText)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices(Users.Users,DataCardValue2.SearchText)
                 SelectMultiple: =false
+                Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage8 As label:
+            ErrorMessage2 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -132,35 +134,35 @@ AddUserPage As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
+                Y: =DataCardValue2.Y + DataCardValue2.Height
                 ZIndex: =3
 
-            StarVisible8 As label:
+            StarVisible2 As label:
                 Align: =Align.Center
-                Height: =DataCardKey8.Height
+                Height: =DataCardKey2.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey8.Y
+                Y: =DataCardKey2.Y
                 ZIndex: =4
 
-        Role_DataCard2 As typedDataCard.comboBoxEditCard:
+        Group_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Role"
-            Default: =ThisItem.Role
+            DataField: ="Group"
+            Default: =ThisItem.Group
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Users],DataSourceInfo.DisplayName,"Role")
+            DisplayName: =DataSourceInfo([@Users],DataSourceInfo.DisplayName,"Group")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =true
-            Update: =DataCardValue9.Selected
+            Required: =false
+            Update: =DataCardValue3.Selected
             Width: =266
             X: =2
             Y: =0
-            ZIndex: =2
+            ZIndex: =1
 
-            DataCardKey9 As label:
+            DataCardKey3 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -170,23 +172,23 @@ AddUserPage As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue9 As combobox:
+            DataCardValue3 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Users].Role)
+                Items: =Choices([@Users].Group)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Users.Role,DataCardValue9.SearchText)
+                SearchItems: =Choices(Users.Group,DataCardValue3.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                 ZIndex: =2
 
-            ErrorMessage9 As label:
+            ErrorMessage3 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -198,17 +200,17 @@ AddUserPage As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue9.Y + DataCardValue9.Height
+                Y: =DataCardValue3.Y + DataCardValue3.Height
                 ZIndex: =3
 
-            StarVisible9 As label:
+            StarVisible3 As label:
                 Align: =Align.Center
-                Height: =DataCardKey9.Height
+                Height: =DataCardKey3.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey9.Y
+                Y: =DataCardKey3.Y
                 ZIndex: =4
 
     ButtonPlannerSave As button:
@@ -233,8 +235,8 @@ AddUserPage As screen:
         Size: =16
         Text: ="Save"
         Width: =133
-        X: =688
-        Y: =250
+        X: =638
+        Y: =465
         ZIndex: =2
 
     Button1 As button:
