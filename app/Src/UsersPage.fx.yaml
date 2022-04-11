@@ -66,30 +66,6 @@ UsersPage As screen:
             Y: =15
             ZIndex: =12
 
-    Rectangle4 As rectangle:
-        Height: =40
-        Width: =1023
-        X: =273
-        Y: =248
-        ZIndex: =6
-
-    THOperations As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Size: =16
-        Text: ="Operations"
-        X: =1146
-        Y: =248
-        ZIndex: =7
-
-    THGroups As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Size: =16
-        Text: ="Group"
-        Width: =286
-        X: =860
-        Y: =248
-        ZIndex: =8
-
     Group2 As group:
         Height: =5
         Width: =5
@@ -117,21 +93,52 @@ UsersPage As screen:
             Y: =183
             ZIndex: =5
 
-    THFullName As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Size: =16
-        Text: ="Full name"
-        Width: =294
-        X: =566
-        Y: =248
-        ZIndex: =9
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
 
-    THEmail As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Size: =16
-        Text: ="Email"
-        Width: =293
-        X: =273
-        Y: =248
-        ZIndex: =10
+        Rectangle4 As rectangle:
+            Height: =40
+            Width: =1023
+            X: =273
+            Y: =248
+            ZIndex: =6
+
+        THOperations As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =16
+            Text: ="Operations"
+            X: =1146
+            Y: =248
+            ZIndex: =7
+
+        THGroups As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =16
+            Text: ="Group"
+            Width: =286
+            X: =860
+            Y: =248
+            ZIndex: =8
+
+        THFullName As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =16
+            Text: ="Full name"
+            Width: =294
+            X: =566
+            Y: =248
+            ZIndex: =9
+
+        THEmail As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =16
+            Text: ="Email"
+            Width: =293
+            X: =273
+            Y: =248
+            ZIndex: =10
 

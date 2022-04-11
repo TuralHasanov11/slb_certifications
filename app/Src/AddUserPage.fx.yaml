@@ -1,4 +1,5 @@
 AddUserPage As screen:
+    ImagePosition: =ImagePosition.Fit       
     OnVisible: |-
         =Set(currentPage, {page: "AddUser"})
 
@@ -40,6 +41,7 @@ AddUserPage As screen:
     UserForm As form:
         DataSource: =Users
         Height: =268
+        Item: =UserList.Selected
         X: =345
         Y: =105
         ZIndex: =4

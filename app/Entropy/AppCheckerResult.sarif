@@ -1474,6 +1474,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddUserPage.UserForm.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddUserPage.UserForm.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "AddUserPage",
+                "type": "AddUserPage.UserForm"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "CertificateDetailPage.certificateItem"
                 }
               ],
