@@ -2,8 +2,9 @@ CertificateDetailPage As screen:
 
     CertificateDetailForm As formViewer:
         DataSource: =Certificates
-        X: =40
-        Y: =40
+        NumberOfColumns: =2
+        X: =310
+        Y: =132
         ZIndex: =1
 
         Title_DataCard3 As typedDataCard.textualViewCard:
@@ -15,7 +16,7 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
-            Width: =266
+            Width: =400
             X: =0
             Y: =0
             ZIndex: =2
@@ -43,6 +44,71 @@ CertificateDetailPage As screen:
                 Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                 ZIndex: =2
 
+        Subject_DataCard2 As typedDataCard.comboBoxViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Subject"
+            Default: =ThisItem.Subject
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Subject")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue20.Selected
+            Width: =400
+            X: =1
+            Y: =0
+            ZIndex: =2
+
+            DataCardKey20 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue20 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Certificates].Subject)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Certificates.Subject,DataCardValue20.SearchText)
+                SelectMultiple: =false
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                ZIndex: =2
+
+            ErrorMessage16 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue20.Y + DataCardValue20.Height
+                ZIndex: =3
+
+            StarVisible16 As label:
+                Align: =Align.Center
+                Height: =DataCardKey20.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey20.Y
+                ZIndex: =4
+
         ExpirationDate_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ExpirationDate"
@@ -52,9 +118,9 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =266
-            X: =2
-            Y: =0
+            Width: =400
+            X: =0
+            Y: =1
             ZIndex: =2
 
             DataCardKey14 As label:
@@ -90,8 +156,8 @@ CertificateDetailPage As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue15.Selected
-            Width: =266
-            X: =0
+            Width: =400
+            X: =1
             Y: =1
             ZIndex: =2
 
@@ -154,9 +220,9 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
-            Width: =266
-            X: =1
-            Y: =1
+            Width: =400
+            X: =0
+            Y: =2
             ZIndex: =2
 
             DataCardKey17 As label:
@@ -182,43 +248,6 @@ CertificateDetailPage As screen:
                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                 ZIndex: =2
 
-        Description_DataCard2 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Description"
-            Default: =ThisItem.Description
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Description")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =266
-            X: =2
-            Y: =1
-            ZIndex: =2
-
-            DataCardKey18 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue18 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
-                ZIndex: =2
-
         InterestedPeople_DataCard2 As typedDataCard.comboBoxMultiSelectViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="InterestedPeople"
@@ -229,8 +258,8 @@ CertificateDetailPage As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue19.SelectedItems
-            Width: =266
-            X: =0
+            Width: =400
+            X: =1
             Y: =2
             ZIndex: =2
 
@@ -284,22 +313,21 @@ CertificateDetailPage As screen:
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
-        Subject_DataCard2 As typedDataCard.comboBoxViewCard:
+        Description_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Subject"
-            Default: =ThisItem.Subject
+            DataField: ="Description"
+            Default: =ThisItem.Description
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Subject")
+            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =true
-            Update: =DataCardValue20.Selected
-            Width: =266
-            X: =1
-            Y: =0
+            Height: =40
+            Required: =false
+            Width: =400
+            X: =0
+            Y: =3
             ZIndex: =2
 
-            DataCardKey20 As label:
+            DataCardKey18 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -309,43 +337,16 @@ CertificateDetailPage As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue20 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Certificates].Subject)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(Certificates.Subject,DataCardValue20.SearchText)
-                SelectMultiple: =false
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
-                ZIndex: =2
-
-            ErrorMessage16 As label:
+            DataCardValue18 As label:
                 AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue20.Y + DataCardValue20.Height
-                ZIndex: =3
-
-            StarVisible16 As label:
-                Align: =Align.Center
-                Height: =DataCardKey20.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey20.Y
-                ZIndex: =4
+                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
+                ZIndex: =2
 

@@ -11,7 +11,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "640",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -44,7 +51,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -972,7 +979,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,

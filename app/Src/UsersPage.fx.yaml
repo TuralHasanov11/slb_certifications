@@ -3,14 +3,14 @@ UsersPage As screen:
         =Set(currentPage, {page: "UsersPage"})
 
     UserList As gallery.galleryVertical:
-        Height: =529
+        Height: =523
         Items: =Users
         Layout: =Layout.Vertical
         ShowNavigation: =true
         TemplateSize: =80
         Width: =980
         X: =246
-        Y: =116
+        Y: =165
         ZIndex: =1
 
         Label1 As label:
@@ -64,4 +64,7 @@ UsersPage As screen:
         X: =267
         Y: =93
         ZIndex: =2
+
+    AppLayout_1 As AppLayout:
+        ZIndex: =3
 

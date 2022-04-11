@@ -859,7 +859,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey21",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1133,7 +1133,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey22",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1407,7 +1407,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey23",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1681,7 +1681,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey24",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1986,7 +1986,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue21",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2325,7 +2325,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue22",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2689,7 +2689,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue23",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3053,7 +3053,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue24",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3374,7 +3374,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage17",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3655,7 +3655,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage18",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3936,7 +3936,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage19",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4217,7 +4217,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage20",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4645,7 +4645,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible17",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4926,7 +4926,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible18",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5207,7 +5207,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible19",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5488,7 +5488,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible20",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
