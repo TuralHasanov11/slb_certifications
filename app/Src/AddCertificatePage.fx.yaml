@@ -4,6 +4,7 @@ AddCertificatePage As screen:
 
     CertificateForm As form:
         DataSource: =Certificates
+        Item: =certificateItem
         X: =291
         Y: =96
         ZIndex: =1

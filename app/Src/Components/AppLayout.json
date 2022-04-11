@@ -2,7 +2,7 @@
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
   "ComponentManifest": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "AllowCustomization": true,
     "Description": "",
     "Name": "AppLayout",
@@ -10,7 +10,26 @@
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
-  "CustomProperties": [],
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "NavigationMenu",
+      "Hidden": false,
+      "Name": "NavigationMenu",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Item\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "SelectedPage",
+      "Hidden": true,
+      "Name": "SelectedPage",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
   "FirstParty": true,
   "Id": "http://microsoft.com/appmagic/Component",
   "IsComponentLocked": false,
@@ -19,7 +38,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637852560626034570",
+  "LastModifiedTimestamp": "637852580349065623",
   "Name": "4409ebab4a344e198728583d618be77d",
   "OverridableProperties": {},
   "Version": "637849150205108180"

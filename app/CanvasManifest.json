@@ -99,7 +99,6 @@
   },
   "ScreenOrder": [
     "UsersPage",
-    "DefaultPage",
     "CertificatesPage",
     "AddUserPage",
     "AddCertificatePage",
