@@ -9,57 +9,57 @@ CertificatesPage As screen:
         Height: =565
         Items: =Certificates
         Layout: =Layout.Vertical
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        TemplateSize: =100
         Width: =913
-        X: =264
-        Y: =102
+        X: =273
+        Y: =171
         ZIndex: =2
 
         CertificateTitle As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Title
-            Y: =40
+            Y: =28
             ZIndex: =1
 
         CertificateExpirationDate As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.ExpirationDate
             X: =257
-            Y: =40
+            Y: =28
             ZIndex: =2
 
         CertificateDepartment As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Department.Value
+            Width: =73
             X: =407
-            Y: =40
+            Y: =28
             ZIndex: =3
 
         CertificateIssueDate As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.IssueDate
-            X: =480
-            Y: =40
+            X: =510
+            Y: =28
             ZIndex: =5
 
         CertificateSubject As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Subject.Value
             X: =125
-            Y: =40
+            Y: =28
             ZIndex: =8
 
         CertificateEdit As icon.Edit:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 191, 0, 1)
             Icon: =Icon.Edit
-            OnSelect: |-
-                =EditForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade, {certificateItem:ThisItem})
+            OnSelect: =EditForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
             PaddingLeft: =5
             PaddingRight: =5
             PaddingTop: =5
-            X: =724
-            Y: =28
+            X: =760
+            Y: =16
             ZIndex: =9
 
         CertificateDelete As icon.Trash:
@@ -71,8 +71,8 @@ CertificatesPage As screen:
             PaddingLeft: =5
             PaddingRight: =5
             PaddingTop: =5
-            X: =788
-            Y: =28
+            X: =824
+            Y: =16
             ZIndex: =10
 
         CertficateDetail As icon.DocumentwithContent:
@@ -85,7 +85,7 @@ CertificatesPage As screen:
             PaddingLeft: =5
             PaddingRight: =5
             PaddingTop: =5
-            X: =660
-            Y: =28
+            X: =696
+            Y: =16
             ZIndex: =11
 

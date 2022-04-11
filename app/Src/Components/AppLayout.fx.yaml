@@ -3,7 +3,7 @@ AppLayout As CanvasComponent:
     Fill: =RGBA(241, 241, 241, 1)
     Height: =App.Height
     NavigationMenu: |-
-        =Table({Item:"CertificatesPage"}, {Item:"AddCertificatePage"},{Item:"CertificateDetailPage"})
+        =Table({Item:"CertificatesPage"})
     PrimaryColor: ="Text"
     SelectedPage: =Gallery1.Selected.Item
     Width: =1366
@@ -54,10 +54,7 @@ AppLayout As CanvasComponent:
             Height: =659
             Items: =AppLayout.NavigationMenu
             Layout: =Layout.Vertical
-            OnSelect: |-
-                =If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, None));
-                If(ThisItem.Item = "CertificateDetailPage", Navigate(CertificateDetailPage, None));
-                If(ThisItem.Item = "AddCertificatePage", Navigate(AddCertificatePage, None));
+            OnSelect: =If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, None));
             ShowScrollbar: =false
             TemplateFill: =If(ThisItem.Item = AppLayout.SelectedPage, RGBA(220, 220, 220, 1), RGBA(0,0,0,0))
             TemplateSize: =50

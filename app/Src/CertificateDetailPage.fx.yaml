@@ -6,8 +6,8 @@ CertificateDetailPage As screen:
         DataSource: =Certificates
         Item: =certificateItem
         NumberOfColumns: =2
-        X: =310
-        Y: =132
+        X: =256
+        Y: =218
         ZIndex: =2
 
         Title_DataCard3 As typedDataCard.textualViewCard:
@@ -352,4 +352,42 @@ CertificateDetailPage As screen:
                 X: =30
                 Y: =DataCardKey18.Y + DataCardKey18.Height + 5
                 ZIndex: =2
+
+    CertificateEdit_1 As icon.Edit:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(255, 191, 0, 1)
+        Icon: =Icon.Edit
+        OnSelect: =EditForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        X: =1124
+        Y: =140
+        ZIndex: =3
+
+    CertificateDelete_1 As icon.Trash:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(230, 41, 41, 1)
+        Icon: =Icon.Trash
+        OnSelect: =Remove([@Certificates], CertificateList.Selected); If (IsEmpty(Errors([@Certificates], CertificateList.Selected)), Back())
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        X: =1206
+        Y: =140
+        ZIndex: =4
+
+    CertficateDetail_1 As icon.DocumentwithContent:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 51, 102, 1)
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Back()
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        X: =1042
+        Y: =140
+        ZIndex: =5
 
