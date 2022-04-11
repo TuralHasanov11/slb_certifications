@@ -594,19 +594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.Title_DataCard2.DataCardValue4"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.Title_DataCard2.DataCardValue4"
               }
             }
           ],
@@ -624,19 +624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.ExpirationDate_DataCard1.DataCardValue5"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5"
               }
             }
           ],
@@ -654,19 +654,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Department_DataCard1.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Department_DataCard1.DataCardValue6.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.Department_DataCard1.DataCardValue6"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.Department_DataCard1.DataCardValue6"
               }
             }
           ],
@@ -684,19 +684,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.IssueDate_DataCard1.DataCardValue8"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.IssueDate_DataCard1.DataCardValue8"
               }
             }
           ],
@@ -714,19 +714,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Description_DataCard1.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Description_DataCard1.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Description_DataCard1.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Description_DataCard1.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.Description_DataCard1.DataCardValue9"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.Description_DataCard1.DataCardValue9"
               }
             }
           ],
@@ -744,19 +744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.InterestedPeople_DataCard1.DataCardValue10"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10"
               }
             }
           ],
@@ -774,19 +774,169 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificate",
-                "type": "AddCertificate.CertificateForm.Subject_DataCard1.DataCardValue11"
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.Subject_DataCard1.DataCardValue11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CertificatesPage",
+                "type": "CertificatesPage.CertificateList.CertficateDetail"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "CertificatesPage",
+                "type": "CertificatesPage.CertificateList.CertficateDetail"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CertificateDetailPage",
+                "type": "CertificateDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CertificateDetailPage",
+                "type": "CertificateDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "CertificateDetailPage",
+                "type": "CertificateDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20"
               }
             }
           ],
@@ -894,19 +1044,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificate.userItem"
+                  "fullyQualifiedName": "AddCertificatePage.certificateItem"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificate.userItem",
+                  "fullyQualifiedName": "AddCertificatePage.certificateItem",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "userItem",
-                "module": "AddCertificate",
-                "type": "AddCertificate"
+                "member": "certificateItem",
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "CertificateDetailPage.certificateItem"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "CertificateDetailPage.certificateItem",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "certificateItem",
+                "module": "CertificateDetailPage",
+                "type": "CertificateDetailPage"
               }
             }
           ],

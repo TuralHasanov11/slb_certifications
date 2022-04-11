@@ -102,6 +102,7 @@
     "DefaultPage",
     "CertificatesPage",
     "AddUserPage",
-    "AddCertificate"
+    "AddCertificatePage",
+    "CertificateDetailPage"
   ]
 }
