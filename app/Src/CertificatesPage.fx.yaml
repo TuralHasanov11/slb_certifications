@@ -192,7 +192,7 @@ CertificatesPage As screen:
 
     SortByDropdown As dropdown:
         Items: |-
-            =Table({value:"Title"},{value:"IssueDate"}, {value:"Subject"}, {value:"ExpirationDate"})
+            =Table({value:"Title"},{value:"IssueDate"}, {value:"ExpirationDate"})
         Width: =305
         X: =607
         Y: =172
