@@ -52,9 +52,10 @@ AppLayout As CanvasComponent:
             AccessibleLabel: =
             Items: =AppLayout.NavigationMenu
             Layout: =Layout.Vertical
+            OnSelect: =
             TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-            X: =24
-            Y: =126
+            Width: =200+0
+            Y: =109+0
             ZIndex: =1
 
             Label3 As label:
@@ -65,18 +66,27 @@ AppLayout As CanvasComponent:
                 ZIndex: =1
 
             Label5 As label:
+                Height: =42
                 OnSelect: =Select(Parent)
                 Text: =ThisItem.Item
-                X: =60
-                Y: =60
+                X: =50
                 ZIndex: =2
+
+            Rectangle3 As rectangle:
+                Height: =20
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.Item = selected.Item
+                Width: =4
+                X: =11
+                Y: =11
+                ZIndex: =3
 
         Rectangle1 As rectangle:
             BorderColor: =RGBA(101, 128, 187, 1)
             Fill: =RGBA(166, 166, 166, 1)
             Height: =Parent.Height-60
             Width: =1
-            X: =If(!IsExpand, 200, 50)
+            X: =
             Y: |
                 =60+0
             ZIndex: =1
@@ -92,7 +102,7 @@ AppLayout As CanvasComponent:
             PressedBorderColor: =ColorFade(iconHamburgerMenu.BorderColor, -20%)
             TabIndex: =0
             Width: =16
-            X: =24+0
+            X: =24
             Y: =76+0
             ZIndex: =2
 
