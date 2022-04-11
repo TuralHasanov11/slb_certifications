@@ -105,7 +105,7 @@ UsersPage As screen:
             OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
             Text: ="Add Employee"
             Width: =225
-            X: =273
+            X: =1071
             Y: =196
             ZIndex: =3
 
@@ -114,7 +114,7 @@ UsersPage As screen:
             Height: =24
             Icon: =Icon.Add
             Width: =25
-            X: =284
+            X: =1082
             Y: =207
             ZIndex: =7
 
