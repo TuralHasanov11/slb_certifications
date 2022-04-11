@@ -7,51 +7,30 @@ UsersPage As screen:
 
     UserList As gallery.galleryVertical:
         BorderThickness: =0.05
-        Height: =483
+        Height: =457
         Items: =Filter(Users,User().Email=User.Email)
         Layout: =Layout.Vertical
         TemplateSize: =78
         Width: =1023
         X: =273
-        Y: =263
-        ZIndex: =5
+        Y: =288
+        ZIndex: =3
 
         CertificateTitle_1 As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Title
+            X: =21
             Y: =15
             ZIndex: =1
 
-        CertificateExpirationDate_1 As label:
+        UserFullName As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.User.DisplayName
-            X: =321
+            X: =288
             Y: =15
             ZIndex: =2
 
-        CertificateDepartment_1 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Action.Value
-            Width: =131
-            X: =488
-            Y: =15
-            ZIndex: =3
-
-        CertificateIssueDate_1 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Group.Value
-            X: =642
-            Y: =15
-            ZIndex: =5
-
-        CertificateSubject_1 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.ID
-            X: =160
-            Y: =15
-            ZIndex: =8
-
-        CertificateEdit_2 As icon.Edit:
+        UserEditBtn As icon.Edit:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(255, 191, 0, 1)
             Height: =40
@@ -65,7 +44,7 @@ UsersPage As screen:
             Y: =15
             ZIndex: =9
 
-        CertificateDelete_2 As icon.Trash:
+        UserDeleteBtn As icon.Trash:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(230, 41, 41, 1)
             Height: =40
@@ -80,6 +59,13 @@ UsersPage As screen:
             Y: =15
             ZIndex: =10
 
+        Label4 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Group.Value
+            X: =590
+            Y: =15
+            ZIndex: =12
+
     Back_3 As icon.DocumentwithContent:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 51, 102, 1)
@@ -90,8 +76,32 @@ UsersPage As screen:
         PaddingRight: =5
         PaddingTop: =5
         X: =1232
-        Y: =108
+        Y: =86
+        ZIndex: =4
+
+    Rectangle4 As rectangle:
+        Height: =40
+        Width: =1023
+        X: =273
+        Y: =248
         ZIndex: =6
+
+    THOperations As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =16
+        Text: ="Operations"
+        X: =1146
+        Y: =248
+        ZIndex: =7
+
+    THGroups As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =16
+        Text: ="Group"
+        Width: =286
+        X: =860
+        Y: =248
+        ZIndex: =8
 
     Group2 As group:
         Height: =5
@@ -101,13 +111,15 @@ UsersPage As screen:
         ZIndex: =8
 
         Button2 As button:
+            BorderThickness: =0
+            Fill: =RGBA(92, 184, 92, 1)
             Height: =46
             OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
             Text: ="Add Employee"
             Width: =225
             X: =1071
-            Y: =196
-            ZIndex: =3
+            Y: =172
+            ZIndex: =2
 
         Icon1 As icon.Add:
             Color: =RGBA(255, 255, 255, 1)
@@ -115,6 +127,24 @@ UsersPage As screen:
             Icon: =Icon.Add
             Width: =25
             X: =1082
-            Y: =207
-            ZIndex: =7
+            Y: =183
+            ZIndex: =5
+
+    THFullName As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =16
+        Text: ="Full name"
+        Width: =294
+        X: =566
+        Y: =248
+        ZIndex: =9
+
+    THEmail As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =16
+        Text: ="Email"
+        Width: =293
+        X: =273
+        Y: =248
+        ZIndex: =10
 

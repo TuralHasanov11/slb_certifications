@@ -1084,19 +1084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateEdit_2.AccessibleLabel"
+                  "fullyQualifiedName": "UsersPage.UserList.UserEditBtn.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateEdit_2.AccessibleLabel",
+                  "fullyQualifiedName": "UsersPage.UserList.UserEditBtn.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "UsersPage",
-                "type": "UsersPage.UserList.CertificateEdit_2"
+                "type": "UsersPage.UserList.UserEditBtn"
               }
             }
           ],
@@ -1114,19 +1114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateEdit_2.TabIndex"
+                  "fullyQualifiedName": "UsersPage.UserList.UserEditBtn.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateEdit_2.TabIndex",
+                  "fullyQualifiedName": "UsersPage.UserList.UserEditBtn.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "UsersPage",
-                "type": "UsersPage.UserList.CertificateEdit_2"
+                "type": "UsersPage.UserList.UserEditBtn"
               }
             }
           ],
@@ -1414,19 +1414,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateDelete_2.AccessibleLabel"
+                  "fullyQualifiedName": "UsersPage.UserList.UserDeleteBtn.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateDelete_2.AccessibleLabel",
+                  "fullyQualifiedName": "UsersPage.UserList.UserDeleteBtn.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "UsersPage",
-                "type": "UsersPage.UserList.CertificateDelete_2"
+                "type": "UsersPage.UserList.UserDeleteBtn"
               }
             }
           ],
@@ -1444,19 +1444,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateDelete_2.TabIndex"
+                  "fullyQualifiedName": "UsersPage.UserList.UserDeleteBtn.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "UsersPage.UserList.CertificateDelete_2.TabIndex",
+                  "fullyQualifiedName": "UsersPage.UserList.UserDeleteBtn.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "UsersPage",
-                "type": "UsersPage.UserList.CertificateDelete_2"
+                "type": "UsersPage.UserList.UserDeleteBtn"
               }
             }
           ],
