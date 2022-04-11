@@ -3,3 +3,68 @@ CertificatesPage As screen:
     OnVisible: |-
         =Set(currentPage, {page: "CertificatesPage"})
 
+    Gallery1 As gallery.galleryVertical:
+        Height: =565
+        Items: =Certificates
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =913
+        X: =264
+        Y: =102
+        ZIndex: =1
+
+        Label3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Title
+            Y: =40
+            ZIndex: =1
+
+        Label5 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ExpirationDate
+            X: =257
+            Y: =40
+            ZIndex: =2
+
+        Label6 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Department.Value
+            X: =407
+            Y: =40
+            ZIndex: =3
+
+        Label8 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.IssueDate
+            X: =480
+            Y: =40
+            ZIndex: =5
+
+        Label12 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Subject.Value
+            X: =125
+            Y: =40
+            ZIndex: =8
+
+        Icon2 As icon.Edit:
+            Icon: =Icon.Edit
+            OnSelect: =Select(Parent)
+            X: =724
+            Y: =28
+            ZIndex: =9
+
+        Icon5 As icon.Trash:
+            Icon: =Icon.Trash
+            OnSelect: =Select(Parent)
+            X: =788
+            Y: =28
+            ZIndex: =10
+
+        Icon6 As icon.DocumentwithContent:
+            Icon: =Icon.DocumentWithContent
+            OnSelect: =Select(Parent)
+            X: =660
+            Y: =28
+            ZIndex: =11
+

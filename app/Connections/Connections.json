@@ -12,6 +12,9 @@
     "datasets": {
       "https://slb001.sharepoint.com/sites/Documents2": {
         "dataSources": {
+          "Certificates": {
+            "tableName": "b7333b53-c090-4132-96df-e53ff7ff90ee"
+          },
           "Users": {
             "tableName": "f277c2d2-3ceb-4f83-8c68-9af40692682d"
           }
@@ -19,7 +22,8 @@
       }
     },
     "dataSources": [
-      "Users"
+      "Users",
+      "Certificates"
     ],
     "dependencies": {},
     "dependents": [],
