@@ -291,7 +291,7 @@ AddCertificatePage As screen:
             DataCardKey5 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Expiration Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -365,9 +365,10 @@ AddCertificatePage As screen:
 
             DepartmentInput As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    =If(CertificateForm.Mode = FormMode.New, {Value:AuthUser.Group.Value} ,Parent.Default)
                 DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(!(AuthUser.Group.Value="Admins"),Disabled,Parent.DisplayMode)
                 Items: =Choices([@Certificates].Department)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
@@ -437,11 +438,11 @@ AddCertificatePage As screen:
             DataCardKey8 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Issue Date"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =13
                 ZIndex: =1
 
             DataCardValue8 As datepicker:
@@ -456,7 +457,7 @@ AddCertificatePage As screen:
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =59
+                Y: =47
                 ZIndex: =2
 
             ErrorMessage8 As label:
@@ -502,7 +503,7 @@ AddCertificatePage As screen:
             DataCardKey10 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Interested People"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30

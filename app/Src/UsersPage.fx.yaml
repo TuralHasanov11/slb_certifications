@@ -7,7 +7,7 @@ UsersPage As screen:
     UserList As gallery.galleryVertical:
         BorderThickness: =0.05
         Height: =457
-        Items: =SortByColumns(Filter([@Users], StartsWith(Title, UserFilter.Text)), SortByDropdownUser.Selected.value, If(SortDescendingUser, Descending, Ascending))
+        Items: =SortByColumns(Filter([@Users], StartsWith(Title, UserFilter.Text)), "Title", If(SortDescendingUser, Descending, Ascending))
         Layout: =Layout.Vertical
         TemplateSize: =78
         Width: =1023
@@ -92,14 +92,6 @@ UsersPage As screen:
             Y: =200
             ZIndex: =5
 
-    SortByDropdownUser As dropdown:
-        Items: |-
-            =Table({value:"Title"})
-        Width: =305
-        X: =627
-        Y: =192
-        ZIndex: =11
-
     Group3 As group:
         Height: =5
         Width: =5
@@ -150,13 +142,14 @@ UsersPage As screen:
             ZIndex: =10
 
     Icon2_1 As icon.ArrowsUpDown:
+        Color: =RGBA(255, 255, 255, 1)
         Height: =36
         Icon: =Icon.Sort
         OnSelect: |-
             =UpdateContext({SortDescendingUser: !SortDescendingUser})
         Width: =52
-        X: =932
-        Y: =192
+        X: =514
+        Y: =252
         ZIndex: =12
 
     UserFilter As text:
