@@ -5,3 +5,54 @@ Home As screen:
 
     AppLayout_6 As AppLayout:
 
+    Button3 As button:
+        Height: =60
+        OnSelect: =Navigate(CertificatesPage, ScreenTransition.Fade)
+        Size: =20
+        Text: ="All Certificates"
+        Width: =240
+        X: =277
+        Y: =287
+        ZIndex: =2
+
+    Button3_1 As button:
+        Height: =60
+        OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
+        Size: =20
+        Text: ="Add User"
+        Width: =200
+        X: =1063
+        Y: =287
+        ZIndex: =3
+
+    Button3_2 As button:
+        Height: =60
+        OnSelect: =Navigate(UsersPage, ScreenTransition.Fade)
+        Size: =20
+        Text: ="Users"
+        Width: =240
+        X: =799
+        Y: =287
+        ZIndex: =4
+
+    Button3_3 As button:
+        Height: =60
+        OnSelect: =NewForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+        Size: =20
+        Text: ="Add Certificate"
+        Width: =240
+        X: =536
+        Y: =287
+        ZIndex: =5
+
+    Label3 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Height: =54
+        Size: =40
+        Text: ="Welcome"
+        Width: =284
+        X: =628
+        Y: =96
+        ZIndex: =6
+

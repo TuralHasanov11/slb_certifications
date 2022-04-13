@@ -3,7 +3,7 @@ AppLayout As CanvasComponent:
     Fill: =RGBA(241, 241, 241, 1)
     Height: =App.Height
     NavigationMenu: |-
-        =Table({Item:"CertificatesPage"}, {Item:"UsersPage"})
+        =Table({Item:"Home"}, {Item:"CertificatesPage"}, {Item:"UsersPage"})
     PrimaryColor: ="Text"
     SelectedPage: =Gallery1.Selected.Item
     Width: =1366
@@ -20,15 +20,18 @@ AppLayout As CanvasComponent:
 
         Gallery1 As gallery.galleryVertical:
             AccessibleLabel: =
-            Height: =649
+            Height: =703
             Items: =AppLayout.NavigationMenu
             Layout: =Layout.Vertical
-            OnSelect: =If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, None));
+            OnSelect: |-
+                =If(ThisItem.Item = "Home", Navigate(Home, Fade));
+                If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, Fade));
+                If(ThisItem.Item = "UsersPage", Navigate(UsersPage, Fade));
             ShowScrollbar: =false
             TemplateFill: =If(ThisItem.Item = AppLayout.SelectedPage, RGBA(220, 220, 220, 1), RGBA(0,0,0,0))
             TemplateSize: =50
             Width: =200
-            Y: =119
+            Y: =70
             ZIndex: =1
 
             Label5 As label:
@@ -55,7 +58,7 @@ AppLayout As CanvasComponent:
             Height: =698
             Width: =1
             X: =200
-            Y: =65
+            Y: =70
             ZIndex: =1
 
     Back_4 As icon.DocumentwithContent:
@@ -90,7 +93,7 @@ AppLayout As CanvasComponent:
             AutoHeight: =true
             Color: =RGBA(255, 255, 255, 1)
             Size: =18
-            Text: ="PowerApps Training"
+            Text: ="SLB Liscence App"
             Width: =396
             X: =40
             Y: =10
