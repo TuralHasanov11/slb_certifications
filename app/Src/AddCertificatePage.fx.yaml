@@ -562,7 +562,9 @@ AddCertificatePage As screen:
         HoverBorderColor: =ColorFade(ButtonPlannerSave_1.BorderColor, 20%)
         HoverColor: =ButtonPlannerSave_1.Color
         HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
-        OnSelect: =SubmitForm(CertificateForm); 
+        OnSelect: |-
+            =If(CertificateForm.Mode=FormMode.Edit,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
+            SubmitForm(CertificateForm); 
         PressedBorderColor: =ButtonPlannerSave_1.Fill
         PressedColor: =ButtonPlannerSave_1.Fill
         PressedFill: =ButtonPlannerSave_1.Color

@@ -30,6 +30,9 @@
     "datasets": {
       "https://slb001.sharepoint.com/sites/Documents2": {
         "dataSources": {
+          "CertificateExpirationDates": {
+            "tableName": "79377989-4940-4c74-ab7b-ff97e8e46fd6"
+          },
           "Certificates": {
             "tableName": "b7333b53-c090-4132-96df-e53ff7ff90ee"
           },
@@ -41,7 +44,8 @@
     },
     "dataSources": [
       "Certificates",
-      "Users"
+      "Users",
+      "CertificateExpirationDates"
     ],
     "dependencies": {},
     "dependents": [],
