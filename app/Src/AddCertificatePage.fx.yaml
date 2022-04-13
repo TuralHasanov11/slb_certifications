@@ -562,7 +562,7 @@ AddCertificatePage As screen:
         HoverBorderColor: =ColorFade(ButtonPlannerSave_1.BorderColor, 20%)
         HoverColor: =ButtonPlannerSave_1.Color
         HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
-        OnSelect: =SubmitForm(CertificateForm)
+        OnSelect: =SubmitForm(CertificateForm); 
         PressedBorderColor: =ButtonPlannerSave_1.Fill
         PressedColor: =ButtonPlannerSave_1.Fill
         PressedFill: =ButtonPlannerSave_1.Color
@@ -576,4 +576,10 @@ AddCertificatePage As screen:
         X: =711
         Y: =707
         ZIndex: =3
+
+    PrevExpirationDate As datepicker:
+        DefaultDate: =CertificateList.Selected.ExpirationDate
+        X: =945
+        Y: =578
+        ZIndex: =4
 

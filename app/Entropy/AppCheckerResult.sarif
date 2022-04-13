@@ -1194,6 +1194,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.PrevExpirationDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "UsersPage.Icon2_1.AccessibleLabel"
                 }
               ],
@@ -1687,6 +1717,36 @@
                 "member": "Item",
                 "module": "CertificateDetailPage",
                 "type": "CertificateDetailPage.CertificateDetailForm"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.DefaultDate"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.DefaultDate",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DefaultDate",
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.PrevExpirationDate"
               }
             }
           ],
