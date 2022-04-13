@@ -9,8 +9,8 @@ AddCertificatePage As screen:
         Height: =546
         Item: =CertificateList.Selected
         Width: =990
-        X: =283
-        Y: =161
+        X: =234
+        Y: =156
         ZIndex: =2
 
         Description_DataCard3 As typedDataCard.richTextEditorEditCard:
@@ -289,10 +289,9 @@ AddCertificatePage As screen:
             ZIndex: =2
 
             DataCardKey5 As label:
-                AutoHeight: =true
                 Height: =34
                 Text: ="Expiration Date"
-                Width: =Parent.Width - 60
+                Width: =182
                 Wrap: =false
                 X: =30
                 Y: =10
@@ -563,7 +562,7 @@ AddCertificatePage As screen:
         HoverColor: =ButtonPlannerSave_1.Color
         HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
         OnSelect: |-
-            =If(CertificateForm.Mode=FormMode.Edit,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
+            =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
             SubmitForm(CertificateForm); 
         PressedBorderColor: =ButtonPlannerSave_1.Fill
         PressedColor: =ButtonPlannerSave_1.Fill
@@ -576,7 +575,7 @@ AddCertificatePage As screen:
         Text: ="Save"
         Width: =133
         X: =711
-        Y: =707
+        Y: =679
         ZIndex: =3
 
     PrevExpirationDate As datepicker:
@@ -584,4 +583,15 @@ AddCertificatePage As screen:
         X: =945
         Y: =578
         ZIndex: =4
+
+    ExpDateIsNew As toggleSwitch:
+        FalseText: ="Not new"
+        Height: =32
+        Size: =10
+        Tooltip: ="Renew or Modify Expiration Date"
+        TrueText: ="New"
+        Width: =109
+        X: =1224
+        Y: =206
+        ZIndex: =5
 
