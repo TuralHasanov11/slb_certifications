@@ -1,12 +1,13 @@
 CertificateDetailPage As screen:
     Fill: =
     OnVisible: |-
-        =Set(currentPage, {page: "CertificateDetailPage"})
+        =Set(currentPage, {page: "CertificateDetailPage"});
 
     AppLayout_5 As AppLayout:
 
     CertificateDetailForm As formViewer:
         DataSource: =Certificates
+        Height: =358
         Item: =CertificateList.Selected
         NumberOfColumns: =2
         Width: =1049
@@ -33,10 +34,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: ="Liscence File"
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue2.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue2 As attachments:
@@ -50,9 +51,9 @@ CertificateDetailPage As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey2.X + DataCardKey2.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage2 As label:
@@ -97,10 +98,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue13.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue13 As label:
@@ -111,9 +112,9 @@ CertificateDetailPage As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey13.X + DataCardKey13.Width
+                Y: =10
                 ZIndex: =2
 
         Subject_DataCard2 As typedDataCard.comboBoxViewCard:
@@ -135,10 +136,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue20.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue20 As combobox:
@@ -151,9 +152,9 @@ CertificateDetailPage As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices(Certificates.Subject,DataCardValue20.SearchText)
                 SelectMultiple: =false
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey20.X + DataCardKey20.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage16 As label:
@@ -199,10 +200,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue14.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue14 As label:
@@ -213,9 +214,9 @@ CertificateDetailPage As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey14.X + DataCardKey14.Width
+                Y: =10
                 ZIndex: =2
 
         Department_DataCard2 As typedDataCard.comboBoxViewCard:
@@ -237,10 +238,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue15.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue15 As combobox:
@@ -253,9 +254,9 @@ CertificateDetailPage As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices(Certificates.Department,DataCardValue15.SearchText)
                 SelectMultiple: =false
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey15.X + DataCardKey15.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage13 As label:
@@ -301,10 +302,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: ="Issue Date"
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue17.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue17 As label:
@@ -315,9 +316,9 @@ CertificateDetailPage As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey17.X + DataCardKey17.Width
+                Y: =10
                 ZIndex: =2
 
         InterestedPeople_DataCard2 As typedDataCard.comboBoxMultiSelectViewCard:
@@ -339,10 +340,10 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: ="Interested People"
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue19.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue19 As combobox:
@@ -355,9 +356,9 @@ CertificateDetailPage As screen:
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices(Certificates.InterestedPeople,DataCardValue19.SearchText)
                 Template: =ListItemTemplate.Person
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey19.Y + DataCardKey19.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey19.X + DataCardKey19.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage15 As label:
@@ -403,7 +404,7 @@ CertificateDetailPage As screen:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
                 Y: =10
@@ -445,4 +446,36 @@ CertificateDetailPage As screen:
         X: =1206
         Y: =140
         ZIndex: =4
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =6
+
+        PreviousExpirationDatesList As gallery.galleryVertical:
+            Height: =104
+            Items: =Filter(CertificateExpirationDates, Certificate.Id=CertificateList.Selected.ID)
+            Layout: =Layout.Vertical
+            TemplateSize: =99
+            Width: =446
+            X: =469
+            Y: =632
+            ZIndex: =1
+
+            Label7 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.ExpirationDate
+                X: =40
+                Y: =25
+                ZIndex: =1
+
+        Label9 As label:
+            Height: =42
+            Text: ="Previous expirationdates"
+            Width: =278
+            X: =256
+            Y: =663
+            ZIndex: =5
 
