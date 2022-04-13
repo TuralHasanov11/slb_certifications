@@ -98,8 +98,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "UsersPage",
     "CertificatesPage",
+    "UsersPage",
     "AddUserPage",
     "AddCertificatePage",
     "CertificateDetailPage"

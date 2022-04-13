@@ -1,7 +1,5 @@
 UsersPage As screen:
-    OnVisible: |-
-        =Set(AuthUserEmail, User().Email);
-        Set(AuthUser, First(Filter(Users,User().Email=User.Email)))
+    OnVisible: =
 
     AppLayout_1 As AppLayout:
 

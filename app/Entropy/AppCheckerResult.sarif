@@ -394,19 +394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DepartmentInput.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DataCardValue6.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DepartmentInput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.Department_DataCard1.DataCardValue6"
+                "type": "AddCertificatePage.CertificateForm.Department_DataCard1.DepartmentInput"
               }
             }
           ],
@@ -1635,36 +1635,6 @@
               },
               "properties": {
                 "member": "AuthUserEmail",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.AuthUser"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.AuthUser",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AuthUser",
                 "module": "App",
                 "type": "App"
               }

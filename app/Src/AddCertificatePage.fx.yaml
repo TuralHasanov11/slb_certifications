@@ -20,7 +20,7 @@ AddCertificatePage As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =286
+            Height: =277
             Required: =false
             Update: =DataCardValue26.HtmlText
             Width: =660
@@ -41,7 +41,7 @@ AddCertificatePage As screen:
             DataCardValue26 As richTextEditor:
                 Default: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
-                Height: =214
+                Height: =224
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey26.Y + DataCardKey26.Height + 5
@@ -347,7 +347,7 @@ AddCertificatePage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue6.Selected
+            Update: =DepartmentInput.Selected
             Width: =330
             X: =0
             Y: =1
@@ -363,7 +363,7 @@ AddCertificatePage As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue6 As combobox:
+            DepartmentInput As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -371,7 +371,7 @@ AddCertificatePage As screen:
                 Items: =Choices([@Certificates].Department)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Certificates.Department,DataCardValue6.SearchText)
+                SearchItems: =Choices(Certificates.Department,DepartmentInput.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -391,7 +391,7 @@ AddCertificatePage As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue6.Y + DataCardValue6.Height
+                Y: =DepartmentInput.Y + DepartmentInput.Height
                 ZIndex: =3
 
             StarVisible6 As label:
@@ -403,6 +403,21 @@ AddCertificatePage As screen:
                 Wrap: =false
                 Y: =DataCardKey6.Y
                 ZIndex: =4
+
+            DepartmentNonFieldError As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =If(!(AuthUser.Group.Value="Admins"||AuthUser.Group.Value=DepartmentInput.Selected.Value), "You have to select your department!")
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =40
+                Y: =DepartmentInput.Y + DepartmentInput.Height
+                ZIndex: =5
 
         IssueDate_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -538,7 +553,7 @@ AddCertificatePage As screen:
     ButtonPlannerSave_1 As button:
         BorderColor: =ColorFade(ButtonPlannerSave_1.Fill, -15%)
         Color: =White
-        DisplayMode: =
+        DisplayMode: =If(!IsBlank(DepartmentNonFieldError.Text), Disabled, Edit)
         Fill: =ColorValue(PrimaryColor)
         FocusedBorderColor: =ButtonPlannerSave_1.BorderColor
         Font: =Font.'Segoe UI'
@@ -558,6 +573,6 @@ AddCertificatePage As screen:
         Text: ="Save"
         Width: =133
         X: =711
-        Y: =661
+        Y: =707
         ZIndex: =3
 

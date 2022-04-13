@@ -1,7 +1,9 @@
 CertificatesPage As screen:
     Fill: =
     OnVisible: |-
-        =Set(currentPage, {page: "CertificatesPage"})
+        =Set(AuthUserEmail, User().Email);
+        Set(AuthUser, First(Filter(Users,User().Email=User.Email)));
+        Set(currentPage, {page: "CertificatesPage"})
 
     AppLayout_2 As AppLayout:
 
