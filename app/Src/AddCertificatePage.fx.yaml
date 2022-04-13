@@ -7,8 +7,9 @@ AddCertificatePage As screen:
     CertificateForm As form:
         DataSource: =Certificates
         Item: =CertificateList.Selected
+        Width: =990
         X: =283
-        Y: =207
+        Y: =161
         ZIndex: =2
 
         Description_DataCard3 As typedDataCard.richTextEditorEditCard:
@@ -18,10 +19,10 @@ AddCertificatePage As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =250
+            Height: =286
             Required: =false
             Update: =DataCardValue26.HtmlText
-            Width: =798
+            Width: =990
             X: =0
             Y: =2
             ZIndex: =1
@@ -39,6 +40,7 @@ AddCertificatePage As screen:
             DataCardValue26 As richTextEditor:
                 Default: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
+                Height: =214
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey26.Y + DataCardKey26.Height + 5
@@ -80,7 +82,7 @@ AddCertificatePage As screen:
             MaxLength: =DataSourceInfo([@Certificates], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue4.Text
-            Width: =266
+            Width: =330
             X: =0
             Y: =0
             ZIndex: =2
@@ -147,7 +149,7 @@ AddCertificatePage As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue11.Selected
-            Width: =266
+            Width: =330
             X: =1
             Y: =0
             ZIndex: =2
@@ -213,7 +215,7 @@ AddCertificatePage As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue5.SelectedDate
-            Width: =266
+            Width: =330
             X: =2
             Y: =0
             ZIndex: =2
@@ -278,7 +280,7 @@ AddCertificatePage As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue6.Selected
-            Width: =266
+            Width: =330
             X: =0
             Y: =1
             ZIndex: =2
@@ -344,7 +346,7 @@ AddCertificatePage As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue8.SelectedDate
-            Width: =266
+            Width: =330
             X: =1
             Y: =1
             ZIndex: =2
@@ -409,7 +411,7 @@ AddCertificatePage As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue10.SelectedItems
-            Width: =266
+            Width: =330
             X: =2
             Y: =1
             ZIndex: =2
@@ -487,7 +489,7 @@ AddCertificatePage As screen:
         Size: =16
         Text: ="Save"
         Width: =133
-        X: =609
+        X: =711
         Y: =661
         ZIndex: =3
 
