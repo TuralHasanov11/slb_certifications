@@ -98,6 +98,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Home",
     "CertificatesPage",
     "UsersPage",
     "AddUserPage",

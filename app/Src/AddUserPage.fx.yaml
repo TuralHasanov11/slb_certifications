@@ -1,7 +1,7 @@
 AddUserPage As screen:
     ImagePosition: =ImagePosition.Fit       
     OnVisible: |-
-        =Set(currentPage, {page: "AddUser"})
+        =Set(currentPage, {page: "AddUserPage"})
 
     AppLayout_3 As AppLayout:
 

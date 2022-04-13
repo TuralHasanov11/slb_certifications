@@ -1,4 +1,7 @@
 CertificateDetailPage As screen:
+    Fill: =
+    OnVisible: |-
+        =Set(currentPage, {page: "CertificateDetailPage"})
 
     AppLayout_5 As AppLayout:
 

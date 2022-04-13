@@ -1,6 +1,6 @@
 AddCertificatePage As screen:
     OnVisible: |-
-        =Set(currentPage, {page: "AddCertificate"})
+        =Set(currentPage, {page: "AddCertificatePage"})  
 
     AppLayout_4 As AppLayout:
 

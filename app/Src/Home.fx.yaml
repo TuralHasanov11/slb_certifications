@@ -1,0 +1,7 @@
+Home As screen:
+    Fill: =
+    OnVisible: |-
+        =Set(currentPage, {page: "HomePage"})
+
+    AppLayout_6 As AppLayout:
+

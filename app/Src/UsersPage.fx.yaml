@@ -1,5 +1,6 @@
 UsersPage As screen:
-    OnVisible: =
+    OnVisible: |-
+        =Set(currentPage, {page: "UsersPage"})
 
     AppLayout_1 As AppLayout:
 
