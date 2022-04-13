@@ -90,7 +90,7 @@ AddCertificatePage As screen:
             DataCardKey1 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: ="File"
+                Text: ="Liscence File"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30

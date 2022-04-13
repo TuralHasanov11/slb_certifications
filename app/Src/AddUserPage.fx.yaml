@@ -27,16 +27,9 @@ AddUserPage As screen:
         Size: =16
         Text: ="Save"
         Width: =133
-        X: =638
-        Y: =465
+        X: =678
+        Y: =247
         ZIndex: =2
-
-    Button1 As button:
-        OnSelect: =Back()
-        Text: ="Back"
-        X: =411
-        Y: =471
-        ZIndex: =3
 
     UserForm As form:
         DataSource: =Users
