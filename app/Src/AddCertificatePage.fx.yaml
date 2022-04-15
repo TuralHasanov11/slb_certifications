@@ -562,8 +562,9 @@ AddCertificatePage As screen:
         HoverColor: =ButtonPlannerSave_1.Color
         HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
         OnSelect: |-
-            =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
-            SubmitForm(CertificateForm); 
+            =SubmitForm(CertificateForm); 
+            If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
+            Navigate(CertificatesPage, Fade);
         PressedBorderColor: =ButtonPlannerSave_1.Fill
         PressedColor: =ButtonPlannerSave_1.Fill
         PressedFill: =ButtonPlannerSave_1.Color
@@ -594,4 +595,11 @@ AddCertificatePage As screen:
         X: =1224
         Y: =206
         ZIndex: =5
+
+    ExpirationDate_HelpText As label:
+        Text: ="If you are setting a new expiration date "
+        Width: =230
+        X: =1103
+        Y: =156
+        ZIndex: =6
 
