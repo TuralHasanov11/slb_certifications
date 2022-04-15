@@ -455,20 +455,21 @@ CertificateDetailPage As screen:
         ZIndex: =6
 
         PreviousExpirationDatesList As gallery.galleryVertical:
-            Height: =104
+            Height: =144
             Items: =Filter(CertificateExpirationDates, Certificate.Id=CertificateList.Selected.ID)
             Layout: =Layout.Vertical
-            TemplateSize: =99
+            TemplateSize: =37
             Width: =446
-            X: =469
-            Y: =632
+            X: =256
+            Y: =618
             ZIndex: =1
 
             Label7 As label:
+                AutoHeight: =true
                 OnSelect: =Select(Parent)
+                PaddingLeft: =10
                 Text: =ThisItem.ExpirationDate
-                X: =40
-                Y: =25
+                Y: =3
                 ZIndex: =1
 
         Label9 As label:
@@ -476,6 +477,6 @@ CertificateDetailPage As screen:
             Text: ="Previous expirationdates"
             Width: =278
             X: =256
-            Y: =663
+            Y: =576
             ZIndex: =5
 
