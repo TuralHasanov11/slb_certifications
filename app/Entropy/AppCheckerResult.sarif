@@ -1284,19 +1284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Title_DataCard4.DataCardValue21.AccessibleLabel"
+                  "fullyQualifiedName": "AddUserPage.UserForm.IsActive_DataCard1.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddUserPage.UserForm.Title_DataCard4.DataCardValue21.AccessibleLabel",
+                  "fullyQualifiedName": "AddUserPage.UserForm.IsActive_DataCard1.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddUserPage",
-                "type": "AddUserPage.UserForm.Title_DataCard4.DataCardValue21"
+                "type": "AddUserPage.UserForm.IsActive_DataCard1.DataCardValue6"
               }
             }
           ],
