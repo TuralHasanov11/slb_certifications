@@ -16,6 +16,7 @@ AddCertificatePage As screen:
             );
         OnSuccess: |-
             =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
+            UploadDocumentToLiscenceStorage.Run({contentBytes: First(DataCardValue1.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title}, CertificateForm.LastSubmit.ID);
             Notify(
                 "Success: Liscence was successfully saved!",
                 NotificationType.Success
@@ -33,7 +34,7 @@ AddCertificatePage As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =277
+            Height: =201
             Required: =false
             Update: =DataCardValue26.HtmlText
             Width: =660
@@ -54,7 +55,7 @@ AddCertificatePage As screen:
             DataCardValue26 As richTextEditor:
                 Default: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
-                Height: =224
+                Height: =164
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey26.Y + DataCardKey26.Height + 5
@@ -88,11 +89,11 @@ AddCertificatePage As screen:
         Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.'{Attachments}'
+            Default: =ThisItem.Attachments
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =295
+            Height: =169
             Required: =false
             Update: =DataCardValue1.Attachments
             Width: =330
@@ -103,7 +104,7 @@ AddCertificatePage As screen:
             DataCardKey1 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: ="Liscence File"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -116,7 +117,6 @@ AddCertificatePage As screen:
                 Height: =100
                 IsInDataCard: =true
                 Items: =Parent.Default
-                MaxAttachments: =1
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5

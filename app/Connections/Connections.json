@@ -48,7 +48,9 @@
       "CertificateExpirationDates"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "da9d542b-0ac3-492c-816f-5635be22df96"
+    ],
     "id": "76f32400-09ce-4243-84e5-a4d74ab8df93"
   },
   "77c98440-3cc5-4ff7-af66-dabddcddf0ce": {
@@ -68,5 +70,46 @@
     "dependencies": {},
     "dependents": [],
     "id": "77c98440-3cc5-4ff7-af66-dabddcddf0ce"
+  },
+  "da9d542b-0ac3-492c-816f-5635be22df96": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/0a6e43b0387847cd951ef0e0bb74bc4e-cad09006f2df9adf",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-243.westeurope.logic.azure.com:443/workflows/a62f48849bc145edb090c5fe942fa398/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2Po-eMTZ5Kyn_qnS5MprMm3WqA2H2XazXVt9-rd7r28",
+      "workflowEndpoint": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/41ff26dc250f4b138981739be8610c21-19cafee5c3bd471089e402e7b75874fe/providers/Microsoft.Logic/workflows/0a6e43b0-3878-47cd-951e-f0e0bb74bc4e",
+      "workflowName": "0a6e43b0-3878-47cd-951e-f0e0bb74bc4e",
+      "workflowPath": "/subscriptions/5072fcc3-8341-442e-9b98-4b441017c969/resourceGroups/41ff26dc250f4b138981739be8610c21-19cafee5c3bd471089e402e7b75874fe/providers/Microsoft.Logic/workflows/0a6e43b0-3878-47cd-951e-f0e0bb74bc4e"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "76f32400-09ce-4243-84e5-a4d74ab8df93": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "0a6e43b0-3878-47cd-951e-f0e0bb74bc4e"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "76f32400-09ce-4243-84e5-a4d74ab8df93"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "0a6e43b0-3878-47cd-951e-f0e0bb74bc4e"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "UploadDocumentToLiscenceStorage"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "76f32400-09ce-4243-84e5-a4d74ab8df93"
+    },
+    "dependents": [],
+    "id": "da9d542b-0ac3-492c-816f-5635be22df96"
   }
 }
