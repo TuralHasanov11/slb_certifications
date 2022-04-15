@@ -67,8 +67,9 @@ UsersPage As screen:
             ZIndex: =12
 
         Label4_1 As label:
+            Color: =If(ThisItem.IsActive, RGBA(54, 176, 75, 1), RGBA(246, 45, 16, 1)) 
             OnSelect: =Select(Parent)
-            Text: =
+            Text: =If(ThisItem.IsActive, "Active", "Not Active")
             Width: =98
             X: =752
             Y: =15

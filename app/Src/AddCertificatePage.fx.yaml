@@ -608,8 +608,8 @@ AddCertificatePage As screen:
 
     ExpirationDate_HelpText As label:
         Text: ="If you are setting a new expiration date "
-        Width: =230
-        X: =1103
-        Y: =156
+        Width: =666
+        X: =279
+        Y: =116
         ZIndex: =6
 

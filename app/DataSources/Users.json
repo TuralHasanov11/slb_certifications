@@ -25,6 +25,7 @@
       "{VersionNumber}": "Version number",
       "Action": "Action",
       "Action#Id": "Action Id",
+      "Active": "IsActive",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
       "ComplianceAssetId": "Compliance Asset Id",
