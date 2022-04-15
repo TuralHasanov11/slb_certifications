@@ -16,7 +16,7 @@ AddCertificatePage As screen:
             );
         OnSuccess: |-
             =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
-            UploadDocumentToLiscenceStorage.Run({contentBytes: First(DataCardValue1.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title}, CertificateForm.LastSubmit.ID);
+            UploadDocumentToLiscenceStorage.Run({contentBytes: First(DataCardValue1.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title}, CertificateList.Selected.ID);
             Notify(
                 "Success: Liscence was successfully saved!",
                 NotificationType.Success
