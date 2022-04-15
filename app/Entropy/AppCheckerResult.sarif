@@ -1754,6 +1754,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.selectedPage"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.selectedPage",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "selectedPage",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.AuthUserEmail"
                 }
               ],

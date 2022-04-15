@@ -29,7 +29,7 @@ AppLayout As CanvasComponent:
                 If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, Fade));
                 If(ThisItem.Item = "UsersPage", Navigate(UsersPage, Fade));
             ShowScrollbar: =false
-            TemplateFill: =If(ThisItem.Item = selectedPage.Item, RGBA(220, 220, 220, 1), RGBA(0,0,0,0))
+            TemplateFill: =If(ThisItem.Item = App.ActiveScreen.Name, RGBA(220, 220, 220, 1), RGBA(0,0,0,0))
             TemplateSize: =50
             Width: =200
             Y: =70
@@ -47,7 +47,7 @@ AppLayout As CanvasComponent:
                 Fill: =ColorValue(AppLayout.PrimaryColor)
                 Height: =20
                 OnSelect: =Select(Parent)
-                Visible: =ThisItem.Item = selectedPage.Item
+                Visible: =ThisItem.Item = App.ActiveScreen.Name
                 Width: =5
                 X: =10
                 Y: =15

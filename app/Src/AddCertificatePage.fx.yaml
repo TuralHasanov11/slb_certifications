@@ -8,6 +8,16 @@ AddCertificatePage As screen:
         DataSource: =Certificates
         Height: =546
         Item: =CertificateList.Selected
+        OnFailure: |-
+            =Notify(
+                "Failed: Liscence was not saved due to an error",
+                NotificationType.Error
+            );
+        OnSuccess: |-
+            =Notify(
+                "Success: Liscence was successfully saved!",
+                NotificationType.Success
+            );
         Width: =990
         X: =234
         Y: =156
@@ -553,7 +563,7 @@ AddCertificatePage As screen:
     ButtonPlannerSave_1 As button:
         BorderColor: =ColorFade(ButtonPlannerSave_1.Fill, -15%)
         Color: =White
-        DisplayMode: =If(!IsBlank(DepartmentNonFieldError.Text), Disabled, Edit)
+        DisplayMode: =If(!CertificateForm.Valid ||!IsBlank(DepartmentNonFieldError.Text), Disabled, Edit)
         Fill: =ColorValue(PrimaryColor)
         FocusedBorderColor: =ButtonPlannerSave_1.BorderColor
         Font: =Font.'Segoe UI'
@@ -561,10 +571,9 @@ AddCertificatePage As screen:
         HoverBorderColor: =ColorFade(ButtonPlannerSave_1.BorderColor, 20%)
         HoverColor: =ButtonPlannerSave_1.Color
         HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
-        OnSelect: |-
+        OnSelect: |
             =SubmitForm(CertificateForm); 
             If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
-            Navigate(CertificatesPage, Fade);
         PressedBorderColor: =ButtonPlannerSave_1.Fill
         PressedColor: =ButtonPlannerSave_1.Fill
         PressedFill: =ButtonPlannerSave_1.Color
