@@ -377,7 +377,7 @@ AddCertificatePage As screen:
                 DefaultSelectedItems: |-
                     =If(CertificateForm.Mode = FormMode.New, {Value:AuthUser.Group.Value} ,Parent.Default)
                 DisplayFields: =["Value"]
-                DisplayMode: =If(!(AuthUser.Group.Value="Admins"),Disabled,Parent.DisplayMode)
+                DisplayMode: =If(!("Admins" in AuthUser.Group.Value),Disabled,Parent.DisplayMode)
                 Items: =Choices([@Certificates].Department)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
@@ -422,7 +422,7 @@ AddCertificatePage As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =If(!(AuthUser.Group.Value="Admins"||AuthUser.Group.Value=DepartmentInput.Selected.Value), "You have to select your department!")
+                Text: =If(!("Admins" in AuthUser.Group.Value||DepartmentInput.Selected.Value in AuthUser.Group.Value), "You have to select your department!")
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =40

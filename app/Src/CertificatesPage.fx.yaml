@@ -10,7 +10,7 @@ CertificatesPage As screen:
     CertificateList As gallery.galleryVertical:
         BorderThickness: =0.05
         Height: =483
-        Items: =SortByColumns(Filter([@Certificates], StartsWith(Title, CertificateFilter.Text), AuthUser.Group.Value=Department.Value Or AuthUser.Group.Value="Admins"), SortByDropdown.Selected.value, If(SortDescending1, Descending, Ascending))
+        Items: =SortByColumns(Filter([@Certificates], StartsWith(Title, CertificateFilter.Text), "Admins" in AuthUser.Group.Value Or Department.Value in AuthUser.Group.Value), SortByDropdown.Selected.value, If(SortDescending1, Descending, Ascending))
         Layout: =Layout.Vertical
         TemplateSize: =78
         Width: =1023
@@ -211,4 +211,12 @@ CertificatesPage As screen:
         X: =990
         Y: =228
         ZIndex: =16
+
+    Label8 As label:
+        Height: =38
+        Text: =
+        Width: =255
+        X: =363
+        Y: =99
+        ZIndex: =17
 
