@@ -1974,36 +1974,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.certificateItem"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.certificateItem",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "certificateItem",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "CertificateDetailPage.AppLayout_5.PageTitle"
                 }
               ],

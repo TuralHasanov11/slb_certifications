@@ -15,10 +15,12 @@ AddCertificatePage As screen:
                 NotificationType.Error
             );
         OnSuccess: |-
-            =Notify(
+            =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
+            Notify(
                 "Success: Liscence was successfully saved!",
                 NotificationType.Success
             );
+            Back()
         Width: =990
         X: =260
         Y: =179
@@ -574,7 +576,6 @@ AddCertificatePage As screen:
         HoverFill: =ColorFade(ButtonPlannerSave_1.Fill, 20%)
         OnSelect: |
             =SubmitForm(CertificateForm); 
-            If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
         PressedBorderColor: =ButtonPlannerSave_1.Fill
         PressedColor: =ButtonPlannerSave_1.Fill
         PressedFill: =ButtonPlannerSave_1.Color
