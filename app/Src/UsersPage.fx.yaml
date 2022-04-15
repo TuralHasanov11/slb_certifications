@@ -61,9 +61,18 @@ UsersPage As screen:
         Label4 As label:
             OnSelect: =Select(Parent)
             Text: =Concat(ThisItem.Group.Value,Value,", ")
-            X: =590
+            Width: =202
+            X: =550
             Y: =15
             ZIndex: =12
+
+        Label4_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =
+            Width: =98
+            X: =752
+            Y: =15
+            ZIndex: =13
 
     Group2 As group:
         Height: =5
@@ -116,10 +125,11 @@ UsersPage As screen:
 
         THGroups As label:
             Color: =RGBA(255, 255, 255, 1)
+            Height: =28
             Size: =16
             Text: ="Group"
-            Width: =286
-            X: =860
+            Width: =220
+            X: =814
             Y: =248
             ZIndex: =8
 
@@ -127,7 +137,7 @@ UsersPage As screen:
             Color: =RGBA(255, 255, 255, 1)
             Size: =16
             Text: ="Full name"
-            Width: =294
+            Width: =248
             X: =566
             Y: =248
             ZIndex: =9
@@ -158,4 +168,13 @@ UsersPage As screen:
         X: =273
         Y: =192
         ZIndex: =13
+
+    THGroups_2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =16
+        Text: ="Active"
+        Width: =112
+        X: =1034
+        Y: =248
+        ZIndex: =14
 
