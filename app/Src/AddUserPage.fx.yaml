@@ -4,6 +4,7 @@ AddUserPage As screen:
         =Set(currentPage, {page: "AddUserPage"})
 
     AppLayout_3 As AppLayout:
+        PageTitle: ="Add User"
 
     ButtonPlannerSave As button:
         BorderColor: =ColorFade(ButtonPlannerSave.Fill, -15%)

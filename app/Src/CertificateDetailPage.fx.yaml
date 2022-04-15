@@ -4,6 +4,7 @@ CertificateDetailPage As screen:
         =Set(currentPage, {page: "CertificateDetailPage"});
 
     AppLayout_5 As AppLayout:
+        PageTitle: ="Certificate Details - "&CertificateList.Selected.Title
 
     CertificateDetailForm As formViewer:
         DataSource: =Certificates

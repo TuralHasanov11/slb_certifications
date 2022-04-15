@@ -6,6 +6,7 @@ CertificatesPage As screen:
         Set(currentPage, {page: "CertificatesPage"})
 
     AppLayout_2 As AppLayout:
+        PageTitle: ="Certificates"
 
     CertificateList As gallery.galleryVertical:
         BorderThickness: =0.05

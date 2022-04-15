@@ -4,6 +4,7 @@ AppLayout As CanvasComponent:
     Height: =App.Height
     NavigationMenu: |-
         =If("Admins" in AuthUser.Group.Value, Table({Item:"Home", Text:"Home"}, {Item:"CertificatesPage", Text:"Certificates"}, {Item:"UsersPage", Text:"Users"}), Table({Item:"Home", Text:"Home"}, {Item:"CertificatesPage", Text:"Certificates"}))
+    PageTitle: ="Text"
     PrimaryColor: ="Text"
     SelectedPage: =Gallery1.Selected.Item
     Width: =1366
@@ -76,6 +77,14 @@ AppLayout As CanvasComponent:
         X: =214
         Y: =85
         ZIndex: =9
+
+    Label10 As label:
+        Size: =24
+        Text: =AppLayout.PageTitle
+        Width: =964
+        X: =301
+        Y: =85
+        ZIndex: =11
 
     Group5 As group:
         Height: =5

@@ -3,6 +3,7 @@ AddCertificatePage As screen:
         =Set(currentPage, {page: "AddCertificatePage"})  
 
     AppLayout_4 As AppLayout:
+        PageTitle: ="Edit Certificate - "&CertificateList.Selected.Title
 
     CertificateForm As form:
         DataSource: =Certificates

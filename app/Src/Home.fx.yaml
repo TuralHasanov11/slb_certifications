@@ -4,6 +4,7 @@ Home As screen:
         =Set(currentPage, {page: "HomePage"})
 
     AppLayout_6 As AppLayout:
+        PageTitle: =
 
     Button3 As button:
         Height: =60

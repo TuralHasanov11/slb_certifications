@@ -3,6 +3,7 @@ UsersPage As screen:
         =Set(currentPage, {page: "UsersPage"})
 
     AppLayout_1 As AppLayout:
+        PageTitle: ="Users"
 
     UserList As gallery.galleryVertical:
         BorderThickness: =0.05
