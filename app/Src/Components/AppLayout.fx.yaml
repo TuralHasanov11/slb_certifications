@@ -144,8 +144,8 @@ AppLayout As CanvasComponent:
             BorderColor: =RGBA(230, 230, 230, 1)
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(39, 113, 194, 1)
-            Size: =16
-            Text: =Concat(AuthUser.Group.Value,Value," ")
+            Size: =12
+            Text: =Concat(AuthUser.Group.Value,Value,", ")
             Width: =160
             X: =1116
             Y: =10
