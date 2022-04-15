@@ -19,8 +19,8 @@ AddCertificatePage As screen:
                 NotificationType.Success
             );
         Width: =990
-        X: =234
-        Y: =156
+        X: =260
+        Y: =179
         ZIndex: =2
 
         Description_DataCard3 As typedDataCard.richTextEditorEditCard:
@@ -584,7 +584,7 @@ AddCertificatePage As screen:
         Size: =16
         Text: ="Save"
         Width: =133
-        X: =711
+        X: =688
         Y: =679
         ZIndex: =3
 
@@ -602,14 +602,23 @@ AddCertificatePage As screen:
         Tooltip: ="Renew or Modify Expiration Date"
         TrueText: ="New"
         Width: =109
-        X: =1224
-        Y: =206
+        X: =1232
+        Y: =224
         ZIndex: =5
 
-    ExpirationDate_HelpText As label:
-        Text: ="If you are setting a new expiration date "
-        Width: =666
-        X: =279
-        Y: =116
+    ExpirationDate_Indicator As label:
+        Color: =RGBA(0, 18, 107, 1)
+        Height: =38
+        Text: =If(ExpDateIsNew, "New", "Updating")
+        Width: =134
+        X: =1232
+        Y: =256
         ZIndex: =6
+
+    ExpirationDate_HelpText_1 As label:
+        Text: ="If you are setting a new expiration date, please check, otherwise (correcting the mistaken expiration date etc.) leave it unchecked "
+        Width: =666
+        X: =366
+        Y: =129
+        ZIndex: =7
 
