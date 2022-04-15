@@ -265,14 +265,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({Item:\"Home\"}, {Item:\"Admin\"}, {Item:\"About\"}, {Item:\"Help\"})",
-          "InvariantPropertyName": "NavigationMenu",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "NavigationMenu",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,

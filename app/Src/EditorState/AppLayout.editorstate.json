@@ -33,7 +33,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({Item:\"Home\"}, {Item:\"Admin\"}, {Item:\"About\"}, {Item:\"Help\"})",
+          "AutoRuleBindingString": "Table({Item:\"Home\", Text:\"\"}, {Item:\"CertificatesPage\"}, {Item:\"UsersPage\"})",
           "InvariantPropertyName": "NavigationMenu",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
