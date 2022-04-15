@@ -16,7 +16,7 @@ AddCertificatePage As screen:
             );
         OnSuccess: |-
             =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
-            UploadDocumentToLiscenceStorage.Run({contentBytes: First(DataCardValue1.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title}, CertificateList.Selected.ID);
+            
             Notify(
                 "Success: Liscence was successfully saved!",
                 NotificationType.Success
@@ -110,22 +110,6 @@ AddCertificatePage As screen:
                 X: =30
                 Y: =10
                 ZIndex: =1
-
-            DataCardValue1 As attachments:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisplayMode: =Parent.DisplayMode
-                Height: =100
-                IsInDataCard: =true
-                Items: =Parent.Default
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
-                ZIndex: =2
 
             ErrorMessage1 As label:
                 AutoHeight: =true
@@ -623,4 +607,20 @@ AddCertificatePage As screen:
         X: =366
         Y: =129
         ZIndex: =7
+
+    DataCardValue1 As attachments:
+        BorderColor: =
+        Height: =88
+        IsInDataCard: =true
+        Items: =Blank()
+        MaxAttachments: =1
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        Tooltip: =
+        Width: =290
+        X: =924
+        Y: =442
+        ZIndex: =8
 
