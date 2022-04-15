@@ -590,6 +590,7 @@ AddCertificatePage As screen:
 
     PrevExpirationDate As datepicker:
         DefaultDate: =CertificateList.Selected.ExpirationDate
+        Visible: =false
         X: =945
         Y: =578
         ZIndex: =4
