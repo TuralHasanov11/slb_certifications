@@ -41,7 +41,6 @@
       "InterestedPeople@odata.type": "InterestedPeople (InterestedPeople@odata.type)",
       "IssueDate": "IssueDate",
       "Modified": "Modified",
-      "PrevExpirationDates": "PrevExpirationDates",
       "Subject": "Subject",
       "Subject#Id": "Subject Id",
       "Title": "Title"

@@ -33,6 +33,7 @@
       "Editor#Claims": "Modified By Claims",
       "Group": "Group",
       "Group#Id": "Group Id",
+      "Group@odata.type": "Group (Group@odata.type)",
       "ID": "ID",
       "Modified": "Modified",
       "Title": "Title",
