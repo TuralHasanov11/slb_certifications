@@ -23,7 +23,7 @@ AddLiscencePage As screen:
                 "Succes: Liscence was saved",
                 NotificationType.Success
             );
-            Navigate(CertficateDetail, Fade)
+            If(CertificateForm.Mode=FormMode.Edit,Navigate(CertficateDetail, Fade),Navigate(LiscencesPage,Fade))
         Width: =990
         X: =260
         Y: =179
@@ -626,23 +626,25 @@ AddLiscencePage As screen:
         Text: ="If you are setting a new expiration date, please check, otherwise (correcting the mistaken expiration date etc.) leave it unchecked "
         Visible: =CertificateForm.Mode=FormMode.Edit
         Width: =666
-        X: =366
-        Y: =129
+        X: =302
+        Y: =139
         ZIndex: =7
 
     Image2 As image:
         Image: =liscenceFile.Thumbnail.Small
         Visible: =CertificateForm.Mode=FormMode.Edit
-        X: =964
-        Y: =625
+        X: =288
+        Y: =651
         ZIndex: =9
 
     HtmlText2 As htmlViewer:
+        Height: =54
         HtmlText: |-
             ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
+        Size: =15
         Visible: =CertificateForm.Mode=FormMode.Edit
-        Width: =172
-        X: =1078
-        Y: =625
+        Width: =216
+        X: =388
+        Y: =651
         ZIndex: =10
 
