@@ -16,7 +16,7 @@ AddCertificatePage As screen:
                 NotificationType.Error
             );
         OnSuccess: |-
-            =UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title&First(LiscenceFileInput.Attachments).Name});
+            =UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title&"-"&First(LiscenceFileInput.Attachments).Name});
             
             Notify(
                 "Success: Liscence was successfully saved!",
