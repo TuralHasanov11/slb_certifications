@@ -1624,19 +1624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.ExpDateIsNew.AccessibleLabel"
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.DataCard4.ExpDateIsNew.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.ExpDateIsNew.AccessibleLabel",
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.DataCard4.ExpDateIsNew.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddCertificatePage",
-                "type": "AddCertificatePage.ExpDateIsNew"
+                "type": "AddCertificatePage.CertificateForm.DataCard4.ExpDateIsNew"
               }
             }
           ],
