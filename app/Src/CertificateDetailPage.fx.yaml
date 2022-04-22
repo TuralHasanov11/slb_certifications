@@ -411,7 +411,6 @@ CertificateDetailPage As screen:
     Image2_1 As image:
         Height: =120+0
         Image: =liscenceFile.Thumbnail.Small
-        Visible: =CertificateForm.Mode=FormMode.Edit
         Width: =120+0
         X: =831
         Y: =554
@@ -451,10 +450,11 @@ CertificateDetailPage As screen:
             ZIndex: =5
 
     HtmlText2_1 As htmlViewer:
+        Height: =62
         HtmlText: |-
             ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
-        Visible: =CertificateForm.Mode=FormMode.Edit
-        Width: =172
+        Size: =15
+        Width: =224
         X: =831
         Y: =678
         ZIndex: =7
