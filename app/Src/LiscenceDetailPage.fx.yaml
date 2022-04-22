@@ -1,4 +1,4 @@
-CertificateDetailPage As screen:
+LiscenceDetailPage As screen:
     Fill: =
     OnVisible: |-
         =Set(currentPage, {page: "CertificateDetailPage"});
@@ -384,7 +384,7 @@ CertificateDetailPage As screen:
         Fill: =RGBA(255, 191, 0, 1)
         Height: =56
         Icon: =Icon.Edit
-        OnSelect: =ResetForm(CertificateForm);EditForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+        OnSelect: =ResetForm(CertificateForm);EditForm(CertificateForm); Navigate(AddLiscencePage, ScreenTransition.Fade)
         PaddingLeft: =5
         PaddingRight: =5
         PaddingTop: =5

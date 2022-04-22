@@ -8,9 +8,9 @@ Home As screen:
 
     Button3 As button:
         Height: =60
-        OnSelect: =Navigate(CertificatesPage, ScreenTransition.Fade)
+        OnSelect: =Navigate(LiscencesPage, ScreenTransition.Fade)
         Size: =20
-        Text: ="All Certificates"
+        Text: ="All Liscences"
         Width: =240
         X: =277
         Y: =287
@@ -40,9 +40,9 @@ Home As screen:
 
     Button3_3 As button:
         Height: =60
-        OnSelect: =ResetForm(CertificateForm);NewForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+        OnSelect: =ResetForm(CertificateForm);NewForm(CertificateForm); Navigate(AddLiscencePage, ScreenTransition.Fade)
         Size: =20
-        Text: ="Add Certificate"
+        Text: ="Add Liscence"
         Width: =240
         X: =536
         Y: =287

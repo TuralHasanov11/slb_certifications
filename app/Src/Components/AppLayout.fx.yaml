@@ -3,7 +3,7 @@ AppLayout As CanvasComponent:
     Fill: =RGBA(241, 241, 241, 1)
     Height: =App.Height
     NavigationMenu: |-
-        =If("Admins" in AuthUser.Group.Value, Table({Item:"Home", Text:"Home"}, {Item:"CertificatesPage", Text:"Certificates"}, {Item:"UsersPage", Text:"Users"}), Table({Item:"Home", Text:"Home"}, {Item:"CertificatesPage", Text:"Certificates"}))
+        =If("Admins" in AuthUser.Group.Value, Table({Item:"Home", Text:"Home"}, {Item:"LiscencesPage", Text:"Liscences"}, {Item:"UsersPage", Text:"Users"}), Table({Item:"Home", Text:"Home"}, {Item:"LiscencesPage", Text:"Liscences"}))
     PageTitle: ="Text"
     PrimaryColor: ="Text"
     SelectedPage: =Gallery1.Selected.Item
@@ -27,7 +27,7 @@ AppLayout As CanvasComponent:
             OnSelect: |-
                 =Set(selectedPage, ThisItem);
                 If(ThisItem.Item = "Home", Navigate(Home, Fade));
-                If(ThisItem.Item = "CertificatesPage", Navigate(CertificatesPage, Fade));
+                If(ThisItem.Item = "LiscencesPage", Navigate(LiscencesPage, Fade));
                 If(ThisItem.Item = "UsersPage", Navigate(UsersPage, Fade));
             ShowScrollbar: =false
             TemplateFill: =If(ThisItem.Item = App.ActiveScreen.Name, RGBA(220, 220, 220, 1), RGBA(0,0,0,0))

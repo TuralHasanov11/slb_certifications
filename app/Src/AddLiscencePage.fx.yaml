@@ -1,4 +1,4 @@
-AddCertificatePage As screen:
+AddLiscencePage As screen:
     OnVisible: |-
         =Set(currentPage, {page: "AddCertificatePage"});
         UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})   

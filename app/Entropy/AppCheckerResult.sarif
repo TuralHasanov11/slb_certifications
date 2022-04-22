@@ -14,12 +14,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.OnVisible"
+                  "fullyQualifiedName": "LiscenceDetailPage.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.OnVisible",
+                  "fullyQualifiedName": "LiscenceDetailPage.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -32,8 +32,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage"
               }
             }
           ],
@@ -54,12 +54,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.OnVisible"
+                  "fullyQualifiedName": "LiscenceDetailPage.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.OnVisible",
+                  "fullyQualifiedName": "LiscenceDetailPage.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -72,8 +72,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage"
               }
             }
           ],
@@ -94,12 +94,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.Items"
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.Items",
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -112,8 +112,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.PreviousExpirationDatesList"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.PreviousExpirationDatesList"
               }
             }
           ],
@@ -134,12 +134,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.Items"
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.Items",
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -152,8 +152,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.PreviousExpirationDatesList"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.PreviousExpirationDatesList"
               }
             }
           ],
@@ -174,12 +174,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.Items"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.Items",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -192,8 +192,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList"
               }
             }
           ],
@@ -214,12 +214,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.Items"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.Items",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -232,8 +232,8 @@
               },
               "properties": {
                 "member": "Items",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList"
               }
             }
           ],
@@ -254,12 +254,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.OnVisible"
+                  "fullyQualifiedName": "AddLiscencePage.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.OnVisible",
+                  "fullyQualifiedName": "AddLiscencePage.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -272,8 +272,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage"
               }
             }
           ],
@@ -294,12 +294,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.OnVisible"
+                  "fullyQualifiedName": "AddLiscencePage.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.OnVisible",
+                  "fullyQualifiedName": "AddLiscencePage.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -312,8 +312,8 @@
               },
               "properties": {
                 "member": "OnVisible",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage"
               }
             }
           ],
@@ -514,19 +514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateEdit_1.AccessibleLabel"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateEdit_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateEdit_1.AccessibleLabel",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateEdit_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateEdit_1"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateEdit_1"
               }
             }
           ],
@@ -544,19 +544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateEdit_1.TabIndex"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateEdit_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateEdit_1.TabIndex",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateEdit_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateEdit_1"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateEdit_1"
               }
             }
           ],
@@ -574,19 +574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDelete_1.AccessibleLabel"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDelete_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDelete_1.AccessibleLabel",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDelete_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDelete_1"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateDelete_1"
               }
             }
           ],
@@ -604,19 +604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDelete_1.TabIndex"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDelete_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDelete_1.TabIndex",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDelete_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDelete_1"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateDelete_1"
               }
             }
           ],
@@ -634,19 +634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20.AccessibleLabel"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20.AccessibleLabel",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateDetailForm.Subject_DataCard2.DataCardValue20"
               }
             }
           ],
@@ -664,19 +664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15.AccessibleLabel"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15.AccessibleLabel",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateDetailForm.Department_DataCard2.DataCardValue15"
               }
             }
           ],
@@ -694,19 +694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19.AccessibleLabel"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19.AccessibleLabel",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateDetailForm.InterestedPeople_DataCard2.DataCardValue19"
               }
             }
           ],
@@ -724,19 +724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.AccessibleLabel"
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.AccessibleLabel",
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.PreviousExpirationDatesList"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.PreviousExpirationDatesList"
               }
             }
           ],
@@ -754,19 +754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.TabIndex"
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.TabIndex",
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.PreviousExpirationDatesList"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.PreviousExpirationDatesList"
               }
             }
           ],
@@ -784,19 +784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateFilter.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.CertificateFilter.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateFilter.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.CertificateFilter.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateFilter"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateFilter"
               }
             }
           ],
@@ -814,19 +814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.SortByDropdown.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.SortByDropdown.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.SortByDropdown.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.SortByDropdown.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.SortByDropdown"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.SortByDropdown"
               }
             }
           ],
@@ -844,19 +844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.Icon2"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.Icon2"
               }
             }
           ],
@@ -874,19 +874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.Icon2.TabIndex"
+                  "fullyQualifiedName": "LiscencesPage.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.Icon2.TabIndex",
+                  "fullyQualifiedName": "LiscencesPage.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.Icon2"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.Icon2"
               }
             }
           ],
@@ -904,19 +904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList"
               }
             }
           ],
@@ -934,19 +934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.TabIndex"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.TabIndex",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList"
               }
             }
           ],
@@ -964,19 +964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertficateDetail.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertficateDetail.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList.CertficateDetail"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList.CertficateDetail"
               }
             }
           ],
@@ -994,19 +994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.TabIndex"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertficateDetail.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertficateDetail.TabIndex",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertficateDetail.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList.CertficateDetail"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList.CertficateDetail"
               }
             }
           ],
@@ -1024,19 +1024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateEdit.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateEdit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateEdit.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateEdit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList.CertificateEdit"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList.CertificateEdit"
               }
             }
           ],
@@ -1054,19 +1054,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateEdit.TabIndex"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateEdit.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateEdit.TabIndex",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateEdit.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList.CertificateEdit"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList.CertificateEdit"
               }
             }
           ],
@@ -1084,19 +1084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateDelete.AccessibleLabel"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateDelete.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateDelete.AccessibleLabel",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateDelete.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList.CertificateDelete"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList.CertificateDelete"
               }
             }
           ],
@@ -1114,19 +1114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateDelete.TabIndex"
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateDelete.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificatesPage.CertificateList.CertificateDelete.TabIndex",
+                  "fullyQualifiedName": "LiscencesPage.CertificateList.CertificateDelete.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CertificatesPage",
-                "type": "CertificatesPage.CertificateList.CertificateDelete"
+                "module": "LiscencesPage",
+                "type": "LiscencesPage.CertificateList.CertificateDelete"
               }
             }
           ],
@@ -1414,19 +1414,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Title_DataCard2.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.Title_DataCard2.DataCardValue4"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.Title_DataCard2.DataCardValue4"
               }
             }
           ],
@@ -1444,19 +1444,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Subject_DataCard1.DataCardValue11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.Subject_DataCard1.DataCardValue11"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.Subject_DataCard1.DataCardValue11"
               }
             }
           ],
@@ -1474,19 +1474,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.ExpirationDate_DataCard1.DataCardValue5"
               }
             }
           ],
@@ -1504,19 +1504,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DepartmentInput.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Department_DataCard1.DepartmentInput.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Department_DataCard1.DepartmentInput.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Department_DataCard1.DepartmentInput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.Department_DataCard1.DepartmentInput"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.Department_DataCard1.DepartmentInput"
               }
             }
           ],
@@ -1534,19 +1534,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.IssueDate_DataCard1.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.IssueDate_DataCard1.DataCardValue8"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.IssueDate_DataCard1.DataCardValue8"
               }
             }
           ],
@@ -1564,19 +1564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.InterestedPeople_DataCard1.DataCardValue10"
               }
             }
           ],
@@ -1594,19 +1594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Description_DataCard3.DataCardValue26.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Description_DataCard3.DataCardValue26.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Description_DataCard3.DataCardValue26.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Description_DataCard3.DataCardValue26.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.Description_DataCard3.DataCardValue26"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.Description_DataCard3.DataCardValue26"
               }
             }
           ],
@@ -1624,19 +1624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.DataCard4.ExpDateIsNew.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.DataCard4.ExpDateIsNew.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.DataCard4.ExpDateIsNew.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.DataCard4.ExpDateIsNew.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.DataCard4.ExpDateIsNew"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.DataCard4.ExpDateIsNew"
               }
             }
           ],
@@ -1654,19 +1654,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.PrevExpirationDate.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.PrevExpirationDate.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.PrevExpirationDate"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.PrevExpirationDate"
               }
             }
           ],
@@ -1804,19 +1804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput.AccessibleLabel"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput.AccessibleLabel",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput"
               }
             }
           ],
@@ -1924,36 +1924,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.selectedPage"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.selectedPage",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "selectedPage",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.AuthUserEmail"
                 }
               ],
@@ -1984,19 +1954,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.AppLayout_5.PageTitle"
+                  "fullyQualifiedName": "App.selectedPage"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.AppLayout_5.PageTitle",
+                  "fullyQualifiedName": "App.selectedPage",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "selectedPage",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LiscenceDetailPage.AppLayout_5.PageTitle"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LiscenceDetailPage.AppLayout_5.PageTitle",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "PageTitle",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.AppLayout_5"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.AppLayout_5"
               }
             }
           ],
@@ -2014,19 +2014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Item"
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Item",
+                  "fullyQualifiedName": "LiscenceDetailPage.CertificateDetailForm.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDetailForm"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.CertificateDetailForm"
               }
             }
           ],
@@ -2044,19 +2044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.Items"
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.Items",
+                  "fullyQualifiedName": "LiscenceDetailPage.PreviousExpirationDatesList.Items",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Items",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.PreviousExpirationDatesList"
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage.PreviousExpirationDatesList"
               }
             }
           ],
@@ -2074,19 +2074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.AppLayout_4.PageTitle"
+                  "fullyQualifiedName": "AddLiscencePage.AppLayout_4.PageTitle"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.AppLayout_4.PageTitle",
+                  "fullyQualifiedName": "AddLiscencePage.AppLayout_4.PageTitle",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "PageTitle",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.AppLayout_4"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.AppLayout_4"
               }
             }
           ],
@@ -2104,19 +2104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Item"
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Item",
+                  "fullyQualifiedName": "AddLiscencePage.CertificateForm.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.CertificateForm"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.CertificateForm"
               }
             }
           ],
@@ -2134,19 +2134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.DefaultDate"
+                  "fullyQualifiedName": "AddLiscencePage.PrevExpirationDate.DefaultDate"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddCertificatePage.PrevExpirationDate.DefaultDate",
+                  "fullyQualifiedName": "AddLiscencePage.PrevExpirationDate.DefaultDate",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DefaultDate",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.PrevExpirationDate"
+                "module": "AddLiscencePage",
+                "type": "AddLiscencePage.PrevExpirationDate"
               }
             }
           ],

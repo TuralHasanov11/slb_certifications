@@ -99,10 +99,10 @@
   },
   "ScreenOrder": [
     "Home",
-    "CertificatesPage",
+    "LiscencesPage",
     "UsersPage",
     "AddUserPage",
-    "AddCertificatePage",
-    "CertificateDetailPage"
+    "AddLiscencePage",
+    "LiscenceDetailPage"
   ]
 }
