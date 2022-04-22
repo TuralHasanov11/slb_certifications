@@ -124,10 +124,10 @@ AddCertificatePage As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"Description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =201
+            Height: =245
             Required: =false
             Update: =DataCardValue26.HtmlText
-            Width: =495
+            Width: =990
             X: =0
             Y: =4
             ZIndex: =1
@@ -145,7 +145,7 @@ AddCertificatePage As screen:
             DataCardValue26 As richTextEditor:
                 Default: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
-                Height: =164
+                Height: =196
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey26.Y + DataCardKey26.Height + 5
