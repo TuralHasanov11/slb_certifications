@@ -1,7 +1,7 @@
 AddCertificatePage As screen:
     OnVisible: |-
         =Set(currentPage, {page: "AddCertificatePage"});
-        Set(liscenceFile, LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID))  
+        UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})   
 
     AppLayout_4 As AppLayout:
         PageTitle: ="Edit Certificate - "&CertificateList.Selected.Title

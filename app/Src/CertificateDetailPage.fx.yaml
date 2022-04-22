@@ -2,6 +2,7 @@ CertificateDetailPage As screen:
     Fill: =
     OnVisible: |-
         =Set(currentPage, {page: "CertificateDetailPage"});
+        UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})  
 
     AppLayout_5 As AppLayout:
         PageTitle: ="Certificate Details - "&CertificateList.Selected.Title
@@ -472,6 +473,15 @@ CertificateDetailPage As screen:
         Y: =140
         ZIndex: =4
 
+    Image2_1 As image:
+        Height: =100+0
+        Image: =liscenceFile.Thumbnail.Small
+        Visible: =CertificateForm.Mode=FormMode.Edit
+        Width: =100+0
+        X: =1162
+        Y: =476
+        ZIndex: =6
+
     Group6 As group:
         Height: =5
         Width: =5
@@ -484,7 +494,7 @@ CertificateDetailPage As screen:
             Items: =Filter(CertificateExpirationDates, Certificate.Id=CertificateList.Selected.ID)
             Layout: =Layout.Vertical
             TemplateSize: =37
-            Width: =503
+            Width: =351
             X: =802
             Y: =618
             ZIndex: =1
@@ -500,8 +510,17 @@ CertificateDetailPage As screen:
         Label9 As label:
             Height: =42
             Text: ="Previous expirationdates"
-            Width: =314
+            Width: =219
             X: =802
             Y: =576
             ZIndex: =5
+
+    HtmlText2_1 As htmlViewer:
+        HtmlText: |-
+            ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
+        Visible: =CertificateForm.Mode=FormMode.Edit
+        Width: =172
+        X: =1162
+        Y: =578
+        ZIndex: =7
 
