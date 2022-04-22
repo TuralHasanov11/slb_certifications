@@ -17,14 +17,14 @@ AddLiscencePage As screen:
                 NotificationType.Error
             );
         OnSuccess: |-
-            =If(CountRows(LiscenceFileInput.Attachments) = 1, UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Department.Value&"-"&CertificateForm.LastSubmit.Subject.Value&"."&Last(Split(First(LiscenceFileInput.Attachments).Name, ".")).Result},CertificateForm.LastSubmit.ID));
+            =If(!IsEmpty(LiscenceFileInput.Attachments), UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Department.Value&"-"&CertificateForm.LastSubmit.Subject.Value&"."&Last(Split(First(LiscenceFileInput.Attachments).Name, ".")).Result},CertificateForm.LastSubmit.ID));
             If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
             Notify(
                 "Succes: Liscence was saved",
                 NotificationType.Success
             );
             If(CertificateForm.Mode=FormMode.Edit, Navigate(LiscenceDetailPage,Fade));
-            If(CertificateForm.Mode=FormMode.New, Navigate(LiscencesPage,Fade));
+            Navigate(LiscencesPage,Fade);
         Width: =990
         X: =260
         Y: =179
