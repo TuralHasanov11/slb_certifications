@@ -724,36 +724,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Attachments_DataCard2.DataCardValue2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "CertificateDetailPage.CertificateDetailForm.Attachments_DataCard2.DataCardValue2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "CertificateDetailPage",
-                "type": "CertificateDetailPage.CertificateDetailForm.Attachments_DataCard2.DataCardValue2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "CertificateDetailPage.PreviousExpirationDatesList.AccessibleLabel"
                 }
               ],

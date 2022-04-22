@@ -17,71 +17,6 @@ CertificateDetailPage As screen:
         Y: =218
         ZIndex: =2
 
-        Attachments_DataCard2 As typedDataCard.attachmentsViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"{Attachments}")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =93
-            Required: =false
-            Update: =DataCardValue2.Attachments
-            Width: =524
-            X: =1
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey2 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: ="Liscence File"
-                Width: =(Parent.Width - 60) * 0.4
-                Wrap: =false
-                X: =30
-                Y: =10 + (DataCardValue2.Height / 2) - (Self.Height / 2)
-                ZIndex: =1
-
-            DataCardValue2 As attachments:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisplayMode: =Parent.DisplayMode
-                Height: =82
-                IsInDataCard: =true
-                Items: =Parent.Default
-                MaxAttachments: =1
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey2.X + DataCardKey2.Width
-                Y: =10
-                ZIndex: =2
-
-            ErrorMessage2 As label:
-                AutoHeight: =true
-                Height: =10
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue2.Y + DataCardValue2.Height
-                ZIndex: =3
-
-            StarVisible2 As label:
-                Align: =Align.Center
-                Height: =DataCardKey2.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey2.Y
-                ZIndex: =4
-
         DataCard1 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ExpirationDate"
@@ -89,8 +24,8 @@ CertificateDetailPage As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =82
             Width: =524
-            X: =0
-            Y: =4
+            X: =1
+            Y: =3
             ZIndex: =1
 
             Label11 As label:

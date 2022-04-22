@@ -38,7 +38,7 @@ Home As screen:
 
     Button3_3 As button:
         Height: =60
-        OnSelect: =NewForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
+        OnSelect: =ResetForm(CertificateForm);NewForm(CertificateForm); Navigate(AddCertificatePage, ScreenTransition.Fade)
         Size: =20
         Text: ="Add Certificate"
         Width: =240

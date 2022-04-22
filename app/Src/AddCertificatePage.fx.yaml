@@ -16,11 +16,12 @@ AddCertificatePage As screen:
                 NotificationType.Error
             );
         OnSuccess: |-
-            =UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title&"."&Last(Split(First(LiscenceFileInput.Attachments).Name, ".")).Result},CertificateForm.LastSubmit.ID);
+            =If(CountRows(LiscenceFileInput.Attachments) > 1, UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Title&"."&Last(Split(First(LiscenceFileInput.Attachments).Name, ".")).Result},CertificateForm.LastSubmit.ID));
             Notify(
                 "Succes: Liscence was saved",
                 NotificationType.Success
             );
+            Navigate(CertficateDetail, Fade)
         Width: =990
         X: =260
         Y: =179
