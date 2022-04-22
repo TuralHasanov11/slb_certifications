@@ -1624,36 +1624,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddCertificatePage.LiscenceFileInput.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AddCertificatePage.LiscenceFileInput.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "AddCertificatePage",
-                "type": "AddCertificatePage.LiscenceFileInput"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "AddCertificatePage.ExpDateIsNew.AccessibleLabel"
                 }
               ],
@@ -1817,6 +1787,36 @@
                 "member": "AccessibleLabel",
                 "module": "AddUserPage",
                 "type": "AddUserPage.UserForm.IsActive_DataCard1.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AddCertificatePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AddCertificatePage",
+                "type": "AddCertificatePage.CertificateForm.Attachments_DataCard5.LiscenceFileInput"
               }
             }
           ],

@@ -17,6 +17,7 @@ AddCertificatePage As screen:
             );
         OnSuccess: |-
             =If(CountRows(LiscenceFileInput.Attachments) = 1, UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Department.Value&"-"&CertificateForm.LastSubmit.Subject.Value&"."&Last(Split(First(LiscenceFileInput.Attachments).Name, ".")).Result},CertificateForm.LastSubmit.ID));
+            If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
             Notify(
                 "Succes: Liscence was saved",
                 NotificationType.Success
@@ -84,6 +85,73 @@ AddCertificatePage As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey26.Y
+                ZIndex: =4
+
+        Attachments_DataCard5 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =183
+            Required: =false
+            Update: =LiscenceFileInput.Attachments
+            Width: =330
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            LiscenceFileInput As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =100
+                IsInDataCard: =true
+                Items: =
+                MaxAttachments: =1
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                ZIndex: =2
+
+            ErrorMessage14 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =LiscenceFileInput.Y + LiscenceFileInput.Height
+                ZIndex: =3
+
+            StarVisible14 As label:
+                Align: =Align.Center
+                Height: =DataCardKey16.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey16.Y
                 ZIndex: =4
 
         Title_DataCard2 As typedDataCard.textualEditCard:
@@ -558,27 +626,11 @@ AddCertificatePage As screen:
         Y: =129
         ZIndex: =7
 
-    LiscenceFileInput As attachments:
-        BorderColor: =
-        Height: =88
-        IsInDataCard: =true
-        Items: =
-        MaxAttachments: =1
-        PaddingBottom: =5
-        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-        PaddingRight: =5
-        PaddingTop: =5
-        Tooltip: =
-        Width: =290
-        X: =921
-        Y: =456
-        ZIndex: =8
-
     Image2 As image:
         Image: =liscenceFile.Thumbnail.Small
         Visible: =CertificateForm.Mode=FormMode.Edit
-        X: =1000
-        Y: =561
+        X: =964
+        Y: =625
         ZIndex: =9
 
     HtmlText2 As htmlViewer:
@@ -586,7 +638,7 @@ AddCertificatePage As screen:
             ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
         Visible: =CertificateForm.Mode=FormMode.Edit
         Width: =172
-        X: =1011
-        Y: =685
+        X: =1078
+        Y: =625
         ZIndex: =10
 
