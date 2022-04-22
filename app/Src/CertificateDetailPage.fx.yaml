@@ -9,7 +9,7 @@ CertificateDetailPage As screen:
 
     CertificateDetailForm As formViewer:
         DataSource: =Certificates
-        Height: =358
+        Height: =336
         Item: =CertificateList.Selected
         NumberOfColumns: =2
         Width: =1049
