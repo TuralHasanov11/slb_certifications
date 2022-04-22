@@ -3888,7 +3888,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "DropDownSample",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Items",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -3949,7 +3949,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"value\"}",
+          "NameMap": "{\"Value\":\"text\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

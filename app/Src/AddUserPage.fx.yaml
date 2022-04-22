@@ -36,6 +36,17 @@ AddUserPage As screen:
         DataSource: =Users
         Height: =268
         Item: =UserList.Selected
+        OnFailure: |-
+            =Notify(
+                "Failed: User couldn't be saved!",
+                NotificationType.Error
+            );
+        OnSuccess: |-
+            =Notify(
+                "Succes: User was created!",
+                NotificationType.Success
+            );
+            Navigate(UsersPage, Fade)
         X: =341
         Y: =277
         ZIndex: =4

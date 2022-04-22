@@ -189,7 +189,7 @@ LiscencesPage As screen:
 
     SortByDropdown As dropdown:
         Items: |-
-            =Table({value:"Title"},{value:"IssueDate"}, {value:"ExpirationDate"})
+            =Table({ value:"Title", text:"Title" }, { value:"IssueDate", text:"Issue Date" }, { value:"ExpirationDate", text:"Expiration Date" })
         Width: =305
         X: =607
         Y: =172
