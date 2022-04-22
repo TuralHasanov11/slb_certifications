@@ -21,6 +21,7 @@ Home As screen:
         OnSelect: =NewForm(UserForm);Navigate(AddUserPage, ScreenTransition.Fade)
         Size: =20
         Text: ="Add User"
+        Visible: ="Admins" in AuthUser.Group.Value
         Width: =200
         X: =1063
         Y: =287
@@ -31,6 +32,7 @@ Home As screen:
         OnSelect: =Navigate(UsersPage, ScreenTransition.Fade)
         Size: =20
         Text: ="Users"
+        Visible: ="Admins" in AuthUser.Group.Value
         Width: =240
         X: =799
         Y: =287

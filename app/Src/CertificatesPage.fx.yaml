@@ -163,7 +163,7 @@ CertificatesPage As screen:
             Fill: =RGBA(92, 184, 92, 1)
             Height: =46
             OnSelect: =NewForm(CertificateForm);Navigate(AddCertificatePage, ScreenTransition.Fade)
-            Text: ="Add Certificate"
+            Text: ="Add Liscence"
             Width: =225
             X: =1058
             Y: =169
