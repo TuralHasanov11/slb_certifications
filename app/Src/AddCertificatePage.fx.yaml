@@ -15,13 +15,13 @@ AddCertificatePage As screen:
                 NotificationType.Error
             );
         OnSuccess: |-
-            =If(CertificateForm.Mode=FormMode.Edit && ExpDateIsNew.Value=true,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate, Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
+            =UploadDocumentToLiscenceStorage.Run({contentBytes: First(LiscenceFileInput.Attachments).Value, name: CertificateForm.LastSubmit.ID&CertificateForm.LastSubmit.Title});
             
             Notify(
                 "Success: Liscence was successfully saved!",
                 NotificationType.Success
             );
-            Back()
+            Navigate(CertificatesPage, Fade)
         Width: =990
         X: =260
         Y: =179
@@ -93,9 +93,9 @@ AddCertificatePage As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =169
+            Height: =100
             Required: =false
-            Update: =DataCardValue1.Attachments
+            Update: =LiscenceFileInput.Attachments
             Width: =330
             X: =2
             Y: =2
@@ -123,7 +123,7 @@ AddCertificatePage As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue1.Y + DataCardValue1.Height
+                Y: =LiscenceFileInput.Y + LiscenceFileInput.Height
                 ZIndex: =3
 
             StarVisible1 As label:
@@ -588,8 +588,8 @@ AddCertificatePage As screen:
         Tooltip: ="Renew or Modify Expiration Date"
         TrueText: ="New"
         Width: =109
-        X: =1232
-        Y: =224
+        X: =1100
+        Y: =129
         ZIndex: =5
 
     ExpirationDate_Indicator As label:
@@ -597,8 +597,8 @@ AddCertificatePage As screen:
         Height: =38
         Text: =If(ExpDateIsNew, "New", "Updating")
         Width: =134
-        X: =1232
-        Y: =256
+        X: =1100
+        Y: =161
         ZIndex: =6
 
     ExpirationDate_HelpText_1 As label:
@@ -608,7 +608,7 @@ AddCertificatePage As screen:
         Y: =129
         ZIndex: =7
 
-    DataCardValue1 As attachments:
+    LiscenceFileInput As attachments:
         BorderColor: =
         Height: =88
         IsInDataCard: =true
@@ -620,7 +620,7 @@ AddCertificatePage As screen:
         PaddingTop: =5
         Tooltip: =
         Width: =290
-        X: =924
-        Y: =442
+        X: =921
+        Y: =456
         ZIndex: =8
 
