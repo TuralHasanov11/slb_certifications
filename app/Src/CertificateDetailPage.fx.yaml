@@ -5,7 +5,7 @@ CertificateDetailPage As screen:
         UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})  
 
     AppLayout_5 As AppLayout:
-        PageTitle: ="Certificate Details - "&CertificateList.Selected.Title
+        PageTitle: ="Liscence Details - "&CertificateList.Selected.Title
 
     CertificateDetailForm As formViewer:
         DataSource: =Certificates
@@ -174,7 +174,7 @@ CertificateDetailPage As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Default
+                Text: =Text(Parent.Default, "d.mm.yyyy")
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey14.X + DataCardKey14.Width
                 Y: =10
@@ -276,7 +276,7 @@ CertificateDetailPage As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Default
+                Text: =Text(Parent.Default, "d.mm.yyyy")
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey17.X + DataCardKey17.Width
                 Y: =10
@@ -409,12 +409,12 @@ CertificateDetailPage As screen:
         ZIndex: =4
 
     Image2_1 As image:
-        Height: =100+0
+        Height: =120+0
         Image: =liscenceFile.Thumbnail.Small
         Visible: =CertificateForm.Mode=FormMode.Edit
-        Width: =100+0
-        X: =1162
-        Y: =476
+        Width: =120+0
+        X: =831
+        Y: =554
         ZIndex: =6
 
     Group6 As group:
@@ -430,8 +430,8 @@ CertificateDetailPage As screen:
             Layout: =Layout.Vertical
             TemplateSize: =37
             Width: =351
-            X: =802
-            Y: =618
+            X: =288
+            Y: =596
             ZIndex: =1
 
             Label7 As label:
@@ -446,8 +446,8 @@ CertificateDetailPage As screen:
             Height: =42
             Text: ="Previous expirationdates"
             Width: =219
-            X: =802
-            Y: =576
+            X: =288
+            Y: =554
             ZIndex: =5
 
     HtmlText2_1 As htmlViewer:
@@ -455,7 +455,7 @@ CertificateDetailPage As screen:
             ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
         Visible: =CertificateForm.Mode=FormMode.Edit
         Width: =172
-        X: =1162
-        Y: =578
+        X: =831
+        Y: =678
         ZIndex: =7
 
