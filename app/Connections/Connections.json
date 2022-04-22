@@ -36,6 +36,9 @@
           "Certificates": {
             "tableName": "b7333b53-c090-4132-96df-e53ff7ff90ee"
           },
+          "CertificatesStorage": {
+            "tableName": "5b0eb073-84e2-4018-a35d-562202e87172"
+          },
           "Users": {
             "tableName": "f277c2d2-3ceb-4f83-8c68-9af40692682d"
           }
@@ -45,7 +48,8 @@
     "dataSources": [
       "Certificates",
       "Users",
-      "CertificateExpirationDates"
+      "CertificateExpirationDates",
+      "CertificatesStorage"
     ],
     "dependencies": {},
     "dependents": [

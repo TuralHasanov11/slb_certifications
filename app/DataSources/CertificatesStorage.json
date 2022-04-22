@@ -1,0 +1,50 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-04-21T17:15:17.9230000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{Identifier}": "Identifier",
+      "{IsCheckedOut}": "Checked out",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "Certificate": "Certificate",
+      "Certificate#Id": "Certificate Id",
+      "Certificate_x003a__x0020_Title": "Certificate: Title",
+      "Certificate_x003a__x0020_Title#Id": "Certificate: Title Id",
+      "CheckoutUser": "Checked Out To",
+      "CheckoutUser#Claims": "Checked Out To Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "MediaServiceAutoTags": "Tags",
+      "Modified": "Modified",
+      "OData__DisplayName": "Sensitivity",
+      "OData__ExtendedDescription": "Description",
+      "Title": "Title"
+    },
+    "DatasetName": "https://slb001.sharepoint.com/sites/Documents2",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "CertificatesStorage",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
