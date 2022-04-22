@@ -28,7 +28,7 @@ CertificatesPage As screen:
 
         CertificateExpirationDate As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.ExpirationDate
+            Text: =Text(ThisItem.ExpirationDate, "d.mm.yyyy")
             X: =162
             Y: =15
             ZIndex: =2
