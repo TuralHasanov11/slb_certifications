@@ -4,7 +4,7 @@ AddCertificatePage As screen:
         UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})   
 
     AppLayout_4 As AppLayout:
-        PageTitle: ="Edit Certificate - "&CertificateList.Selected.Title
+        PageTitle: =If(CertificateForm.Mode=FormMode.Edit,"Edit Liscence - "&CertificateList.Selected.Title,"Add Liscence")
 
     CertificateForm As form:
         DataSource: =Certificates
@@ -621,6 +621,7 @@ AddCertificatePage As screen:
 
     ExpirationDate_HelpText_1 As label:
         Text: ="If you are setting a new expiration date, please check, otherwise (correcting the mistaken expiration date etc.) leave it unchecked "
+        Visible: =CertificateForm.Mode=FormMode.Edit
         Width: =666
         X: =366
         Y: =129
