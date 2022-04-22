@@ -23,7 +23,8 @@ AddLiscencePage As screen:
                 "Succes: Liscence was saved",
                 NotificationType.Success
             );
-            If(CertificateForm.Mode=FormMode.Edit,Navigate(CertficateDetail, Fade),Navigate(LiscencesPage,Fade))
+            If(CertificateForm.Mode=FormMode.Edit, Navigate(LiscenceDetailPage,Fade));
+            If(CertificateForm.Mode=FormMode.New, Navigate(LiscencesPage,Fade));
         Width: =990
         X: =260
         Y: =179
@@ -34,6 +35,7 @@ AddLiscencePage As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =100
+            Visible: =CertificateForm.Mode=FormMode.Edit
             Width: =495
             X: =0
             Y: =2
@@ -45,6 +47,7 @@ AddLiscencePage As screen:
                 Size: =10
                 Tooltip: ="Renew or Modify Expiration Date"
                 TrueText: ="New"
+                Visible: =CertificateForm.Mode=FormMode.Edit
                 Width: =109
                 X: =33
                 Y: =12
@@ -551,6 +554,7 @@ AddLiscencePage As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
+                InputTextPlaceholder: ="Search Interested people"
                 Items: =Choices([@Certificates].InterestedPeople)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
@@ -590,7 +594,7 @@ AddLiscencePage As screen:
     ButtonPlannerSave_1 As button:
         BorderColor: =ColorFade(ButtonPlannerSave_1.Fill, -15%)
         Color: =White
-        DisplayMode: =If(!CertificateForm.Valid ||!IsBlank(DepartmentNonFieldError.Text), Disabled, Edit)
+        DisplayMode: =If(!CertificateForm.Valid ||!IsBlank(DepartmentNonFieldError.Text) || (IsEmpty(LiscenceFileInput.Attachments) && CertificateForm.Mode=FormMode.New), Disabled, Edit)
         Fill: =ColorValue(PrimaryColor)
         FocusedBorderColor: =ButtonPlannerSave_1.BorderColor
         Font: =Font.'Segoe UI'
