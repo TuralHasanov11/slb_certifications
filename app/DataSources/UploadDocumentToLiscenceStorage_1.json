@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "0a6e43b0-3878-47cd-951e-f0e0bb74bc4e",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "UploadDocumentToLiscenceStorage_1",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]
