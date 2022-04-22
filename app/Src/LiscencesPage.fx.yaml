@@ -72,6 +72,7 @@ LiscencesPage As screen:
             PaddingLeft: =5
             PaddingRight: =5
             PaddingTop: =5
+            Visible: ="Admins" in AuthUser.Group.Value
             Width: =40
             X: =956
             Y: =15

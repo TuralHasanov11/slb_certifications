@@ -403,6 +403,7 @@ LiscenceDetailPage As screen:
         PaddingLeft: =5
         PaddingRight: =5
         PaddingTop: =5
+        Visible: ="Admins" in AuthUser.Group.Value
         Width: =56
         X: =1206
         Y: =140

@@ -71,7 +71,7 @@ AddLiscencePage As screen:
             DataCardKey16 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: =Parent.DisplayName & " - Only pdf files are allowed!"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -85,6 +85,20 @@ AddLiscencePage As screen:
                 IsInDataCard: =true
                 Items: =
                 MaxAttachments: =1
+                OnAddFile: |-
+                    =If(
+                        Not(
+                            EndsWith(
+                                First(Self.Attachments).Name,
+                                ".pdf"
+                            )
+                        ),
+                        Notify(
+                            "Only pdf files are allowed!",
+                            NotificationType.Error
+                        );
+                        Reset(Self)
+                    )
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
