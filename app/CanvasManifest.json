@@ -1,8 +1,8 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.323",
-    "MinVersionToLoad": "1.323",
+    "DocVersion": "1.324",
+    "MinVersionToLoad": "1.324",
     "MSAppStructureVersion": "2.0"
   },
   "Properties": {
@@ -83,6 +83,7 @@
     "FileID": "588e6023-2dc6-4b9a-b52e-8d70164e9988",
     "Id": "5a9f0257-31b8-494b-9a5b-5192e118b6e4",
     "InstrumentationKey": "",
+    "LocalDatabaseReferences": "{}",
     "Name": "SLB_Certifications_App",
     "OriginatingVersion": "1.321"
   },
