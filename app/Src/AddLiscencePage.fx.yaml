@@ -1,7 +1,6 @@
 AddLiscencePage As screen:
     OnVisible: |-
-        =Set(currentPage, {page: "AddCertificatePage"});
-        UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})   
+        =Set(currentPage, {page: "AddCertificatePage"});  
 
     AppLayout_4 As AppLayout:
         PageTitle: =If(CertificateForm.Mode=FormMode.Edit,"Edit Liscence - "&CertificateList.Selected.Title,"Add Liscence")
@@ -647,19 +646,12 @@ AddLiscencePage As screen:
         Y: =139
         ZIndex: =7
 
-    Image2 As image:
-        Image: =liscenceFile.Thumbnail.Small
-        Visible: =CertificateForm.Mode=FormMode.Edit
-        X: =288
-        Y: =651
-        ZIndex: =9
-
     Button4 As button:
         Height: =30
         OnSelect: =Launch(CertificateList.Selected.File_URL)
         Text: ="View Liscence file"
         Width: =194
-        X: =400
-        Y: =686
+        X: =302
+        Y: =681
         ZIndex: =10
 
