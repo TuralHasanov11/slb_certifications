@@ -471,7 +471,7 @@ LiscenceDetailPage As screen:
 
         Label9 As label:
             Height: =42
-            Text: ="Previous expirationdates"
+            Text: ="Previous expiration dates"
             Width: =219
             X: =288
             Y: =554
