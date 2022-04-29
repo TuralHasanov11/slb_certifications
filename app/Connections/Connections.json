@@ -104,8 +104,8 @@
     },
     "datasets": {},
     "dataSources": [
-      "UploadDocumentToLiscenceStorage",
-      "UploadDocumentToLiscenceStorage_1"
+      "UploadDocumentToLiscenceStorage_1",
+      "UploadDocumentToLiscenceStorage"
     ],
     "dependencies": {
       "shared_sharepointonline": "76f32400-09ce-4243-84e5-a4d74ab8df93"

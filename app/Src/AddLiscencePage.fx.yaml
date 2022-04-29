@@ -17,7 +17,7 @@ AddLiscencePage As screen:
                 NotificationType.Error
             );
         OnSuccess: |-
-            =If(!IsEmpty(LiscenceFileInput.Attachments),UploadDocumentToLiscenceStorage.Run({contentBytes:First(LiscenceFileInput.Attachments).Value,name:CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Department.Value&"-"&CertificateForm.LastSubmit.Subject.Value&"."&Last(Split(First(LiscenceFileInput.Attachments).Name,".")).Result},CertificateForm.LastSubmit.ID));
+            =If(!IsEmpty(LiscenceFileInput.Attachments),UploadDocumentToLiscenceStorage.Run({contentBytes:First(LiscenceFileInput.Attachments).Value,name:CertificateForm.LastSubmit.ID&"-"&CertificateForm.LastSubmit.Department.Value&"-"&CertificateForm.LastSubmit.Subject.Value&"."&Last(Split(First(LiscenceFileInput.Attachments).Name,".")).Result},CertificateForm.LastSubmit.ID, CertificateForm.LastSubmit.Title, CertificateForm.LastSubmit.IssueDate));
             
             If(CertificateForm.Mode=FormMode.Edit&&ExpDateIsNew.Value= true ,Patch(CertificateExpirationDates,Defaults(CertificateExpirationDates),{ExpirationDate:PrevExpirationDate.SelectedDate,Certificate:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",Id:CertificateList.Selected.ID,Value:CertificateList.Selected.Title}}));
             
@@ -55,7 +55,7 @@ AddLiscencePage As screen:
         Attachments_DataCard5 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
-            Default: =ThisItem.'{Attachments}'
+            Default: =ThisItem.Attachments
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"{Attachments}")
             Fill: =RGBA(0, 0, 0, 0)
