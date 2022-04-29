@@ -2,7 +2,6 @@ LiscenceDetailPage As screen:
     Fill: =
     OnVisible: |-
         =Set(currentPage, {page: "CertificateDetailPage"});
-        UpdateContext({liscenceFile: LookUp(CertificatesStorage,Certificate.Id=CertificateList.Selected.ID)})  
 
     AppLayout_5 As AppLayout:
         PageTitle: ="Liscence Details - "&CertificateList.Selected.Title
