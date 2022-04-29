@@ -2104,6 +2104,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "LiscenceDetailPage.liscenceFile"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LiscenceDetailPage.liscenceFile",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "liscenceFile",
+                "module": "LiscenceDetailPage",
+                "type": "LiscenceDetailPage"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "LiscenceDetailPage.AppLayout_5.PageTitle"
                 }
               ],

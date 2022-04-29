@@ -654,14 +654,12 @@ AddLiscencePage As screen:
         Y: =651
         ZIndex: =9
 
-    HtmlText2 As htmlViewer:
-        Height: =54
-        HtmlText: |-
-            ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
-        Size: =15
-        Visible: =CertificateForm.Mode=FormMode.Edit
-        Width: =216
-        X: =388
-        Y: =651
+    Button4 As button:
+        Height: =30
+        OnSelect: =Launch(CertificateList.Selected.File_URL)
+        Text: ="View Liscence file"
+        Width: =194
+        X: =400
+        Y: =686
         ZIndex: =10
 

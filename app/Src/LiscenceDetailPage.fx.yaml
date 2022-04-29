@@ -41,6 +41,42 @@ LiscenceDetailPage As screen:
                 Y: =40
                 ZIndex: =2
 
+        File_URL_DataCard1 As typedDataCard.urlViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="File_URL"
+            Default: =ThisItem.File_URL
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Certificates],DataSourceInfo.DisplayName,"File_URL")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =524
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =30
+                Y: =10 + (DataCardValue2.Height / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            DataCardValue2 As htmlViewer:
+                DisplayMode: =Parent.DisplayMode
+                Height: =35
+                HtmlText: ="<a href='" & Parent.Default & "'>"&"View Liscence file"&"</a>"
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey2.X + DataCardKey2.Width
+                Y: =10
+                ZIndex: =2
+
         Title_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
@@ -409,14 +445,6 @@ LiscenceDetailPage As screen:
         Y: =140
         ZIndex: =4
 
-    Image2_1 As image:
-        Height: =120+0
-        Image: =liscenceFile.Thumbnail.Small
-        Width: =120+0
-        X: =831
-        Y: =554
-        ZIndex: =6
-
     Group6 As group:
         Height: =5
         Width: =5
@@ -449,14 +477,4 @@ LiscenceDetailPage As screen:
             X: =288
             Y: =554
             ZIndex: =5
-
-    HtmlText2_1 As htmlViewer:
-        Height: =62
-        HtmlText: |-
-            ="<a href='https://slb001.sharepoint.com/sites/Documents2/CertificatesStorage/"&liscenceFile.'File name with extension'&"'>View Liscence File</a>"
-        Size: =15
-        Width: =224
-        X: =831
-        Y: =678
-        ZIndex: =7
 
