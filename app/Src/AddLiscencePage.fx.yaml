@@ -650,6 +650,7 @@ AddLiscencePage As screen:
         Height: =30
         OnSelect: =Launch(CertificateList.Selected.File_URL)
         Text: ="View Liscence file"
+        Visible: =CertificateForm.Mode=FormMode.Edit
         Width: =194
         X: =302
         Y: =681
