@@ -252,6 +252,7 @@ AddUserPage As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue22.Selected
+            Visible: =UserForm.Mode=FormMode.Edit
             Width: =266
             X: =1
             Y: =0
