@@ -646,13 +646,17 @@ AddLiscencePage As screen:
         Y: =139
         ZIndex: =7
 
-    Button4 As button:
-        Height: =30
-        OnSelect: =Launch(CertificateList.Selected.File_URL)
-        Text: ="View Liscence file"
+    DataCardValue2_1 As htmlViewer:
+        DisplayMode: =DisplayMode.View
+        Height: =35
+        HtmlText: ="<a href='"&CertificateList.Selected.File_URL&"'>"&"View Liscence file"&"</a>"
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =16
         Visible: =CertificateForm.Mode=FormMode.Edit
-        Width: =194
+        Width: =341
         X: =302
-        Y: =681
-        ZIndex: =10
+        Y: =676
+        ZIndex: =11
 
